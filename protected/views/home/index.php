@@ -48,6 +48,8 @@
                 <p class="text-right "><a class="btn btn-primary btn-lg " role="button">Создать новый дневник</a>
             </div>
 
+            <img src="/images/222.jpg" class="img-responsive" alt="Responsive image">
+
         </div>
     </div>
 
@@ -68,5 +70,12 @@
         <button type="submit" class="btn btn-default">Войти</button>
     </form>
 </nav>
+
+<div class="blog-footer">
+    <p>Blog template built for <a href="http://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    <p>
+        <a href="#">Back to top</a>
+    </p>
+</div>
 </body>
 </html>
