@@ -15,8 +15,30 @@
 </head>
 <body>
 
+<ul class="nav nav-tabs  nav-justified">
+	<li class="active"><a href="#">Главная</a></li>
+	<li ><a href="#">Профиль</a></li>
+	<li><a href="#">Поиск</a></li>
+	<li><a href="#">Настройки</a></li>
+	<li><a href="#">Выйти</a></li>
+</ul>
 
-<h1>sdcdscsd</h1>
+<div class="page-header">
+	<h1> Чемодан личных дневников <small> твой ежедневник лежит в самом уютном месте</small></h1>
+</div>
 
+<div class="jumbotron ">
+	<h1> Добро пожаловать ! </h1>
+	<p> Добавь красок сегодняшнего дня... </p>
+	<p><a class="btn btn-primary btn-lg" role="button">Создать новый дневник</a>
+		<a class="btn btn-primary btn-lg" role="button">Мой дневник уже здесь</a></p>
+</div>
+
+<form class="navbar-form navbar-left" role="search">
+	<div class="form-group">
+		<input type="text" class="form-control" placeholder="Search">
+	</div>
+	<button type="submit" class="btn btn-default">Искать</button>
+</form>
 </body>
 </html>
