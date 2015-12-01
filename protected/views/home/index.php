@@ -33,22 +33,22 @@
     <div class="container-fluid bg-dange ">
         <div class="row">
             <div class="page-header ">
-                <h1 class="text-center"> Чемодан личных дневников
+                <h1 class="text-center text-info"> Чемодан дневников
                     <small> твой ежедневник лежит в самом уютном месте</small>
                 </h1>
             </div>
         </div>
 
-        <div class="rowr">
+        <div class="row text-info">
             <div class="jumbotron ">
                 <h1 class="text-right "> Добро пожаловать ! </h1>
 
-                <p class="text-right"> Добавь красок сегодняшнего дня... </p>
+                <p class="text-right text-danger"> Добавь красок сегодняшнего дня... </p>
 
                 <p class="text-right "><a class="btn btn-primary btn-lg " role="button">Создать новый дневник</a>
             </div>
 
-            <!--            <img src="/images/222.jpg" class="img-responsive" alt="Responsive image">-->
+            <img src="/images/222.jpg" class="img-responsive" alt="Responsive image">
 
         </div>
     </div>
@@ -67,15 +67,16 @@
                 <input type="checkbox"> Запомнить меня
             </label>
         </div>
-        <button type="submit" class="btn btn-default">Войти</button>
+        <button class="btn btn-primary " type="submit">Войти</button>
     </form>
+    <br>
 </nav>
 
 <div class="blog-footer">
     <p>Blog template built for <a href="http://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.
     </p>
 
-    <p>
+    <p class="text-center">
         <a href="#">Back to top</a>
     </p>
 </div>
