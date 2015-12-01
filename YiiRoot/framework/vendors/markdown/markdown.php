@@ -1292,10 +1292,10 @@ class Markdown_Parser {
 	#		of the address encoded as either a decimal or hex entity, in
 	#		the hopes of foiling most address harvesting spam bots. E.g.:
 	#
-	#	  <p><a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x66;o&#111;
-	#        &#x40;&#101;&#x78;&#97;&#x6d;&#112;&#x6c;&#101;&#46;&#x63;&#111;
-	#        &#x6d;">&#x66;o&#111;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#x6c;
-	#        &#101;&#46;&#x63;&#111;&#x6d;</a></p>
+	#	  <p><a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x66;o&#111.jpg;
+	#        &#x40;&#101;&#x78;&#97;&#x6d;&#112;&#x6c;&#101;&#46;&#x63;&#111.jpg;
+	#        &#x6d;">&#x66;o&#111.jpg;&#x40;&#101;&#x78;&#97;&#x6d;&#112;&#x6c;
+	#        &#101;&#46;&#x63;&#111.jpg;&#x6d;</a></p>
 	#
 	#	Based by a filter by Matthew Wickline, posted to BBEdit-Talk.
 	#   With some optimizations by Milian Wolff.
