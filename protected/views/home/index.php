@@ -13,15 +13,15 @@
     Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/bootstrap.min.css');
     ?>
 </head>
-<body>
+<body class=" bg-warning">
 
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
+<nav class="navbar navbar-default navbar-static-top " role="navigation">
 
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="collapse navbar-collapse bg-warning" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse bg-warning " id="bs-example-navbar-collapse-1">
 
-        <ul class="nav nav-tabs  nav-justified">
-            <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> </span> Главная</a></li>
+        <ul class="nav nav-tabs  nav-justified ">
+            <li><a href="#"><span class="glyphicon glyphicon-home"> </span> Главная</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-user "> </span> Профиль</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-search"> </span> Поиск</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-wrench"> </span> Настройки</a></li>
@@ -30,16 +30,16 @@
 
     </div>
 
-    <div class="container-fluid ">
+    <div class="container-fluid bg-dange ">
         <div class="row">
-            <div class="page-header">
+            <div class="page-header ">
                 <h1 class="text-center"> Чемодан личных дневников
                     <small> твой ежедневник лежит в самом уютном месте</small>
                 </h1>
             </div>
         </div>
 
-        <div class="row ">
+        <div class="rowr">
             <div class="jumbotron ">
                 <h1 class="text-right "> Добро пожаловать ! </h1>
 
@@ -48,7 +48,7 @@
                 <p class="text-right "><a class="btn btn-primary btn-lg " role="button">Создать новый дневник</a>
             </div>
 
-            <img src="/images/222.jpg" class="img-responsive" alt="Responsive image">
+            <!--            <img src="/images/222.jpg" class="img-responsive" alt="Responsive image">-->
 
         </div>
     </div>
@@ -72,7 +72,9 @@
 </nav>
 
 <div class="blog-footer">
-    <p>Blog template built for <a href="http://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    <p>Blog template built for <a href="http://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.
+    </p>
+
     <p>
         <a href="#">Back to top</a>
     </p>
