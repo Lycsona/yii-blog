@@ -47,8 +47,8 @@
 
                 <p class="text-right "><a class="btn btn-primary btn-lg " role="button">Создать новый дневник</a>
             </div>
+            <img class="img-responsive" src="/images/222.jpg">
 
-            <img src="/images/222.jpg" class="img-responsive" alt="Responsive image">
 
         </div>
     </div>
