@@ -47,13 +47,11 @@
 
                 <p class="text-right "><a class="btn btn-primary btn-lg " role="button">Создать новый дневник</a>
             </div>
-            <img class="img-responsive" src="/images/222.jpg">
-
-
+<!--            <img class="img-responsive" src="/images/222.jpg">-->
         </div>
     </div>
 
-    <form class="form-inline text-center" role="form">
+    <form class="form-inline text-center" role="form" action="" method="post">
         <div class="form-group">
             <label class="sr-only" for="exampleInputEmail2">Email</label>
             <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
