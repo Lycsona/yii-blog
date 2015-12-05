@@ -7,76 +7,134 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
     <!-- Bootstrap -->
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
     <?php
-    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/bootstrap.min.js', CClientScript::POS_END);
-    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/jquery-2.1.4.min.js', CClientScript::POS_END);
     Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/bootstrap.min.css');
+    Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/bootstrap-theme.min.css');
+    Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/bootstrap-material-design.min.css');
+    Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/ripples.min.css');
+    Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/style.css');
+
+    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/jquery-2.1.4.min.js', CClientScript::POS_END);
+    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/bootstrap.min.js', CClientScript::POS_END);
+    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/material.min.js', CClientScript::POS_END);
+    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/ripples.min.js', CClientScript::POS_END);
     ?>
 </head>
+
 <body class=" bg-warning">
 
-<nav class="navbar navbar-default navbar-static-top " role="navigation">
-
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="collapse navbar-collapse bg-warning " id="bs-example-navbar-collapse-1">
-
-        <ul class="nav nav-tabs  nav-justified ">
-            <li><a href="#"><span class="glyphicon glyphicon-home"> </span> Главная</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-user "> </span> Профиль</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-search"> </span> Поиск</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-wrench"> </span> Настройки</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-new-window"> </span> Выйти</a></li>
-        </ul>
-
+<!--HEADER START-->
+<div class="navbar navbar-warning ">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand " href="javascript:void(0)">Главная</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-warning-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="javascript:void(0)">Профиль</a></li>
+                <li class="dropdown">
+                    <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Настройки
+                        <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)">Action</a></li>
+                        <li><a href="javascript:void(0)">Another action</a></li>
+                        <li><a href="javascript:void(0)">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Dropdown header</li>
+                        <li><a href="javascript:void(0)">Separated link</a></li>
+                        <li><a href="javascript:void(0)">One more separated link</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)">Выйти</a></li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control col-md-8" placeholder="Search">
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="<?php echo Yii::app()->baseUrl ?>/profile/index">Зарегистрироваться</a></li>
+                <li class="dropdown">
+                    <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
+                        <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)">Action</a></li>
+                        <li><a href="javascript:void(0)">Another action</a></li>
+                        <li><a href="javascript:void(0)">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="javascript:void(0)">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-
-    <div class="container-fluid bg-dange ">
-        <div class="row">
-            <div class="page-header ">
-                <h1 class="text-center text-info"> Чемодан дневников
-                    <small> твой ежедневник лежит в самом уютном месте</small>
-                </h1>
-            </div>
-        </div>
-
-        <div class="row text-info">
-            <div class="jumbotron ">
-                <h1 class="text-right "> Добро пожаловать ! </h1>
-
-                <p class="text-right text-danger"> Добавь красок сегодняшнего дня... </p>
-
-                <p class="text-right "><a class="btn btn-primary btn-lg " role="button">Создать новый дневник</a>
-            </div>
-<!--            <img class="img-responsive" src="/images/222.jpg">-->
-        </div>
-    </div>
-
-    <form class="form-inline text-center" role="form" action="" method="post">
-        <div class="form-group">
-            <label class="sr-only" for="exampleInputEmail2">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-            <label class="sr-only" for="exampleInputPassword2">Пароль</label>
-            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
-        </div>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox"> Запомнить меня
-            </label>
-        </div>
-        <button class="btn btn-primary " type="submit">Войти</button>
-    </form>
-    <br>
-</nav>
-
-<div class="blog-footer">
-    <p>Blog template built for <a href="http://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.
-    </p>
-
-    <p class="text-center">
-        <a href="#">Back to top</a>
-    </p>
 </div>
+<!--HEADER END-->
+
+<!--CONTENT START-->
+<div class="row">
+    <div class="container ">
+        <div class="col-md-12 jumbotron">
+
+            <h1>Название сайта</h1>
+
+            <p>Описание сайта</p>
+
+            <p class=" text-right">Читать о сайте <a class="btn btn-warning btn-fab"><i
+                        class="material-icons ">textsms</i></a></p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="container ">
+        <div class="col-md-4 col-md-offset-8 jumbotron">
+            <form class="form-horizontal" action="<?php echo Yii::app()->baseUrl ?>/protected/controllers/enter">
+
+                <div class="form-group ">
+
+                    <label for="inputEmail" class=" col-md-2 control-label ">Email</label>
+
+                    <div class="col-md-9">
+                        <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword" class="col-md-2 control-label">Password</label>
+
+                    <div class="col-md-9">
+                        <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-9 col-md-offset-2 ">
+
+                            <p class="text-right">Войти
+                                <button type="submit" class="btn btn-warning btn-fab "><i class="material-icons ">
+                                        system_update_alt</i></button>
+                            </p>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--CONTENT END-->
+
+<!--FOOTER START-->
+
+
+<!--FOOTER END-->
 </body>
 </html>
