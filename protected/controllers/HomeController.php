@@ -5,22 +5,31 @@ class HomeController extends Controller
     public function actionIndex()
     {
 
-        $this->render('index');
-    }
+        if (!defined('CRYPT_BLOWFISH') || !CRYPT_BLOWFISH)
+            throw new CHttpException(500, "This application requires that PHP was compiled with Blowfish support for crypt().");
 
+        $model = new LoginFormModel;
 
-    public function actionEnter()
-    {
+        // collect user input data
+        if (isset($_POST['LoginFormModel'])) {
 
-//        if (isset($_POST['email']) && isset($_POST['password'])) {
-//            $email = $_POST['email'];
-//            $password = $_POST['password'];
-//        }
-        $this->render("/profile/index");
+            var_dump($_POST['LoginFormModel']);
+
+            $model->attributes = $_POST['LoginFormModel'];
+            $model->rememberMe = false;
+
+            // validate user input and redirect to the previous page if valid
+            if ($model->login($model)) {
+
+                $this->redirect('/blog/profile/index');
+            } else {
+                echo 'error';
+            }
+
+        }
+        // display the login form
+        $this->render('index', array('model' => $model));
 
     }
 }
-
-
-
 

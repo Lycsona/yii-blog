@@ -98,33 +98,41 @@
 <div class="row">
     <div class="container ">
         <div class="col-md-4 col-md-offset-8 jumbotron">
-            <form class="form-horizontal" action="<?php echo Yii::app()->baseUrl ?>/home/enter" method="GET">
+            <!--            <form class="form-horizontal" action="-->
+            <?php //echo Yii::app()->baseUrl ?><!--/home/index" method="POST">-->
 
-                <div class="form-group ">
+            <?php echo CHtml::beginForm(); ?>
+            <?php echo CHtml::errorSummary($model) ?>
 
-                    <label for="inputEmail" class=" col-md-2 control-label ">Email</label>
+            <div class="col-md-12 form-group">
+                <?php echo CHtml::activeLabel($model, 'Email *:'); ?>
+                <?php echo CHtml::activeTextField($model, 'email',
+                    array(
+                        'class' => 'form-control',
+                        'placeholder' => ' ',
+                    )); ?>
+            </div>
 
-                    <div class="col-md-9">
-                        <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
-                    </div>
+            <div class="col-md-12 form-group">
+                <?php echo CHtml::activeLabel($model, 'Password *:'); ?>
+                <?php echo CHtml::activePasswordField($model, 'password',
+                    array(
+                        'class' => 'form-control',
+                        'placeholder' => ' ',
+                    )); ?>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-9 col-md-offset-6 ">
+
+                    <?php echo CHtml::submitButton('Войти', array(
+                        'submit' => array('registration/index'),
+                        'class' => 'btn btn-raised btn-warning ',
+                    )); ?>
                 </div>
-                <div class="form-group">
-                    <label for="inputPassword" class="col-md-2 control-label">Password</label>
+            </div>
 
-                    <div class="col-md-9">
-                        <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-md-9 col-md-offset-2 ">
-
-                            <p class="text-right">Войти
-                                <button type="submit" class="btn btn-warning btn-fab "><i class="material-icons ">
-                                        system_update_alt</i></button>
-                            </p>
-                        </div>
-                    </div>
-            </form>
+            <?php echo CHtml::endForm(); ?>
         </div>
     </div>
 </div>

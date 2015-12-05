@@ -96,6 +96,7 @@
                     array(
                         'class' => 'form-control',
                         'placeholder' => ' ',
+
                     )); ?>
             </div>
 
@@ -106,7 +107,6 @@
                         'class' => 'form-control',
                         'placeholder' => ' ',
                     )); ?>
-
             </div>
 
             <div class="col-md-12 form-group">
@@ -123,7 +123,7 @@
                 <?php echo CHtml::activePasswordField($model, 'password',
                     array(
                         'class' => 'form-control',
-                        'placeholder' => 'Password *',
+                        'placeholder' => ' ',
                     )); ?>
             </div>
 
@@ -175,6 +175,7 @@
             </div>
 
             <?php echo CHtml::endForm(); ?>
+
         </div>
     </div>
 </div>

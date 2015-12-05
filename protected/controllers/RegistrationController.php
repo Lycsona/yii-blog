@@ -10,7 +10,7 @@ class RegistrationController extends Controller
 			$model->ip = (int)$_SERVER['REMOTE_ADDR'];
 			if ($model->validate()) {
 				if ($model->save()) {
-					$this->redirect('/profile/index');
+					$this->redirect(Yii::app()->user->returnUrl);
 				}
 			}
 
