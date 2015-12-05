@@ -86,107 +86,98 @@
         <div class="col-md-6 col-md-offset-3 jumbotron">
 
             <?php echo CHtml::beginForm(); ?>
-
             <?php echo CHtml::errorSummary($model) ?>
 
-            <fieldset>
-                <legend class="text-center">Создание нового профиля</legend>
+            <legend class="text-center">Создание нового профиля</legend>
 
-                <div class="col-md-12 form-group">
-                    <?php echo CHtml::activeTextField($model, 'firstname',
-                        array(
-                            'class' => 'form-control',
-                            'placeholder' => 'Firstname *',
+            <div class="col-md-12 form-group">
+                <?php echo CHtml::activeLabel($model, 'Firstname *:'); ?>
+                <?php echo CHtml::activeTextField($model, 'firstname',
+                    array(
+                        'class' => 'form-control',
+                        'placeholder' => ' ',
+                    )); ?>
+            </div>
+
+            <div class="col-md-12 form-group">
+                <?php echo CHtml::activeLabel($model, 'Lastname *:'); ?>
+                <?php echo CHtml::activeTextField($model, 'lastname',
+                    array(
+                        'class' => 'form-control',
+                        'placeholder' => ' ',
+                    )); ?>
+
+            </div>
+
+            <div class="col-md-12 form-group">
+                <?php echo CHtml::activeLabel($model, 'Email *:'); ?>
+                <?php echo CHtml::activeTextField($model, 'email',
+                    array(
+                        'class' => 'form-control',
+                        'placeholder' => ' ',
+                    )); ?>
+            </div>
+
+            <div class="col-md-12 form-group">
+                <?php echo CHtml::activeLabel($model, 'Password *:'); ?>
+                <?php echo CHtml::activePasswordField($model, 'password',
+                    array(
+                        'class' => 'form-control',
+                        'placeholder' => 'Password *',
+                    )); ?>
+            </div>
+
+            <div class="col-md-12 form-group">
+                <?php echo CHtml::activeLabel($model, 'City :'); ?>
+                <?php echo CHtml::activeTextField($model, 'city',
+                    array(
+                        'class' => 'form-control',
+                        'placeholder' => ' ',
+                    )); ?>
+            </div>
+
+            <div class="col-md-12 form-group">
+                <?php echo CHtml::activeLabel($model, 'Gender :'); ?>
+                <?php echo CHtml::activeTextField($model, 'gender',
+                    array(
+                        'class' => 'form-control',
+                        'placeholder' => ' ',
+                    )); ?>
+            </div>
+
+            <div class="col-md-12 form-group">
+                <?php echo CHtml::activeLabel($model, 'Data of birthday :'); ?>
+                <?php echo CHtml::activeTextField($model, 'birthday',
+                    array(
+                        'class' => 'form-control',
+                        'placeholder' => ' '
+                    )) ?>
+            </div>
+
+            <div class="col-md-12 form-group">
+                <?php echo CHtml::activeLabel($model, 'Foto :'); ?>
+                <?php echo CHtml::activeTextField($model, 'avatar',
+                    array(
+                        'class' => 'form-control',
+                        'placeholder' => ' '
+                    )) ?>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <div class="col-md-9 col-md-offset-6 ">
+
+                        <?php echo CHtml::submitButton('Зарегистрироваться', array(
+                            'submit' => array('profile/index'),
+                            'class' => 'btn btn-raised btn-warning ',
                         )); ?>
                 </div>
+            </div>
 
-                <div class="col-md-10">
-                    <?php echo CHtml::activeTextField($model, 'lastname',
-                        array(
-                            'class' => 'form-control',
-                            'placeholder' => 'Lastname *',
-                        )); ?>
-
-                </div>
-
-                <div class="col-md-12 form-group">
-                    <?php echo CHtml::activeTextField($model, 'email',
-                        array(
-                            'class' => 'form-control',
-                            'placeholder' => 'Email *',
-                        )); ?>
-                </div>
-
-                <div class="col-md-12 form-group">
-                    <?php echo CHtml::activePasswordField($model, 'password',
-                        array(
-                            'class' => 'form-control',
-                            'placeholder' => 'Password *',
-                        )); ?>
-                </div>
-
-                <div class="col-md-12 form-group">
-                    <?php echo CHtml::activeTextField($model, 'city',
-                        array(
-                            'class' => 'form-control',
-                            'placeholder' => 'City',
-                        )); ?>
-                </div>
-
-                <div class="col-md-12 form-group">
-                    <?php echo CHtml::activeTextField($model, 'gender',
-                        array(
-                            'class' => 'form-control',
-                            'placeholder' => 'Gender',
-                        )); ?>
-                </div>
-
-                <div class="col-md-12 form-group">
-                    <?php echo CHtml::activeTextField($model, 'birthday',
-                        array(
-                            'class' => 'form-control',
-                            'placeholder' => 'Data of birthday'
-                        )) ?>
-                </div>
-
-                <div class="col-md-12 form-group">
-                    <?php echo CHtml::activeTextField($model, 'avatar',
-                        array(
-                            'class' => 'form-control',
-                            'placeholder' => 'Foto'
-                        )) ?>
-                </div>
-                <br>
-
-<!--                <div class="form-group">-->
-<!--                    <div class="col-md-9 col-md-offset-2 ">-->
-<!---->
-<!--                        <p class="text-right">Зарегистрироваться-->
-<!--                            <button type="submit" class="btn btn-warning btn-fab "><i class="material-icons ">-->
-<!--                                    system_update_alt</i></button>-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-
-                <div class="form-group">
-                    <div class="col-md-9 col-md-offset-2 ">
-
-                        <p class="text-right">Зарегистрироваться
-                            <?php echo CHtml::submitButton('', array(
-                                'submit' => array('profile/index'),
-                                'class' => 'btn btn-warning btn-fab',
-
-                            )); ?>
-                        </p>
-                    </div>
-                </div>
-
-                <?php echo CHtml::endForm(); ?>
-            </fieldset>
+            <?php echo CHtml::endForm(); ?>
         </div>
     </div>
 </div>
 <!--CONTENT END-->
-
 </body>
 </html>
