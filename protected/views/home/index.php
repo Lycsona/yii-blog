@@ -62,7 +62,7 @@
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="<?php echo Yii::app()->baseUrl ?>/profile/index">Зарегистрироваться</a></li>
+                <li><a href="<?php echo Yii::app()->baseUrl ?>/registration/index">Зарегистрироваться</a></li>
                 <li class="dropdown">
                     <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
                         <b class="caret"></b></a>
@@ -98,7 +98,7 @@
 <div class="row">
     <div class="container ">
         <div class="col-md-4 col-md-offset-8 jumbotron">
-            <form class="form-horizontal" action="<?php echo Yii::app()->baseUrl ?>/protected/controllers/enter">
+            <form class="form-horizontal" action="<?php echo Yii::app()->baseUrl ?>/controllers/enter">
 
                 <div class="form-group ">
 

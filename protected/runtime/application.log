@@ -989,3 +989,12 @@ Stack trace:
 REQUEST_URI=/blog/profile/index
 HTTP_REFERER=http://host4.server4/blog/index.php
 ---
+2015/12/05 14:15:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "profile/index".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('profile/index')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/profile/index
+HTTP_REFERER=http://host4.server4/blog/index.php
+---
