@@ -40,7 +40,7 @@
         </div>
         <div class="navbar-collapse collapse navbar-warning-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="javascript:void(0)">Профиль</a></li>
+                <li class="active"><a href="<?php echo Yii::app()->baseUrl ?>/profile/index">Профиль</a></li>
                 <li class="dropdown">
                     <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Настройки
                         <b class="caret"></b></a>
@@ -62,7 +62,7 @@
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="<?php echo Yii::app()->baseUrl ?>/profile/index">Зарегистрироваться</a></li>
+                <li><a href="<?php echo Yii::app()->baseUrl ?>/registration/index">Зарегистрироваться</a></li>
                 <li class="dropdown">
                     <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
                         <b class="caret"></b></a>

@@ -36,11 +36,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand " href="javascript:void(0)">Главная</a>
+            <a class="navbar-brand " href="<?php echo Yii::app()->baseUrl ?>/home/index">Главная</a>
         </div>
         <div class="navbar-collapse collapse navbar-warning-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="javascript:void(0)">Профиль</a></li>
+                <li class="active"><a href="<?php echo Yii::app()->baseUrl ?>/profile/index">Профиль</a></li>
                 <li class="dropdown">
                     <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Настройки
                         <b class="caret"></b></a>
@@ -98,7 +98,7 @@
 <div class="row">
     <div class="container ">
         <div class="col-md-4 col-md-offset-8 jumbotron">
-            <form class="form-horizontal" action="<?php echo Yii::app()->baseUrl ?>/controllers/enter">
+            <form class="form-horizontal" action="<?php echo Yii::app()->baseUrl ?>/home/enter" method="GET">
 
                 <div class="form-group ">
 

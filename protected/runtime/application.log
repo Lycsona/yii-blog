@@ -998,3 +998,242 @@ Stack trace:
 REQUEST_URI=/blog/profile/index
 HTTP_REFERER=http://host4.server4/blog/index.php
 ---
+2015/12/05 14:38:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('enter')
+#4 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/enter')
+#5 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/blog/home/enter?email=fffffffffff%40sd.dsf&password=ffffffffffff
+HTTP_REFERER=http://host4.server4/blog/home/index
+---
+2015/12/05 14:41:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('enter')
+#4 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/enter')
+#5 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/blog/home/enter?email=asdas%40df.df&password=rootasd
+HTTP_REFERER=http://host4.server4/blog/home/index
+---
+2015/12/05 14:43:08 [error] [exception.CException] exception 'CException' with message 'HomeController cannot find the requested view "profile/index".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(782): CController->renderPartial('profile/index', NULL, true)
+#1 /var/www/host4.server4/public_html/blog/protected/controllers/HomeController.php(19): CController->render('profile/index')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/actions/CInlineAction.php(49): HomeController->actionEnter()
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('enter')
+#7 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/enter')
+#8 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/blog/home/enter?email=asdas%40df.df&password=rootasd
+HTTP_REFERER=http://host4.server4/blog/home/index
+---
+2015/12/05 14:44:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/profile/in...')
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/home/profile/index
+HTTP_REFERER=http://host4.server4/blog/home/index
+---
+2015/12/05 14:49:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/profile/in...')
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/home/profile/index
+HTTP_REFERER=http://host4.server4/blog/home/index
+---
+2015/12/05 14:49:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/profile/in...')
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/home/profile/index
+HTTP_REFERER=http://host4.server4/blog/home/index
+---
+2015/12/05 14:50:17 [error] [exception.CException] exception 'CException' with message 'HomeController cannot find the requested view "profile/index".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(782): CController->renderPartial('profile/index', NULL, true)
+#1 /var/www/host4.server4/public_html/blog/protected/controllers/HomeController.php(19): CController->render('profile/index')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/actions/CInlineAction.php(49): HomeController->actionEnter()
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('enter')
+#7 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/enter')
+#8 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/blog/home/enter?email=&password=root
+HTTP_REFERER=http://host4.server4/blog/
+---
+2015/12/05 14:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/profile')
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/home/profile
+HTTP_REFERER=http://host4.server4/blog/
+---
+2015/12/05 17:29:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/profile')
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/home/profile
+HTTP_REFERER=http://host4.server4/blog/
+---
+2015/12/05 17:31:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/profile')
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/home/profile
+HTTP_REFERER=http://host4.server4/blog/
+---
+2015/12/05 17:31:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/profile')
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/home/profile
+HTTP_REFERER=http://host4.server4/blog/
+---
+2015/12/05 17:32:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/profile/in...')
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/home/profile/index
+HTTP_REFERER=http://host4.server4/blog/
+---
+2015/12/05 17:32:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/profile/in...')
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/home/profile/index
+HTTP_REFERER=http://host4.server4/blog/
+---
+2015/12/05 17:32:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/profile/in...')
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/home/profile/index
+HTTP_REFERER=http://host4.server4/blog/
+---
+2015/12/05 17:32:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/profile/in...')
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/home/profile/index
+HTTP_REFERER=http://host4.server4/blog/
+---
+2015/12/05 17:32:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/profile/in...')
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/home/profile/index
+HTTP_REFERER=http://host4.server4/blog/
+---
+2015/12/05 17:32:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/profile/in...')
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/home/profile/index
+HTTP_REFERER=http://host4.server4/blog/
+---
+2015/12/05 17:32:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/profile')
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/home/profile
+HTTP_REFERER=http://host4.server4/blog/
+---
+2015/12/05 17:33:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/profile/in...')
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/home/profile/index
+HTTP_REFERER=http://host4.server4/blog/
+---
+2015/12/05 17:33:52 [error] [exception.CException] exception 'CException' with message 'HomeController cannot find the requested view "profile/index".' in /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(782): CController->renderPartial('profile/index', NULL, true)
+#1 /var/www/host4.server4/public_html/blog/protected/controllers/HomeController.php(19): CController->render('profile/index')
+#2 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/actions/CInlineAction.php(49): HomeController->actionEnter()
+#3 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('enter')
+#7 /var/www/host4.server4/public_html/blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('home/enter')
+#8 /var/www/host4.server4/public_html/blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/host4.server4/public_html/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/blog/home/enter?email=&password=root
+HTTP_REFERER=http://host4.server4/blog/
+---

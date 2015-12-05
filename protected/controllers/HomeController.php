@@ -9,14 +9,14 @@ class HomeController extends Controller
     }
 
 
-    public function actionEnter($num1, $num2)
+    public function actionEnter()
     {
 
-        if (isset($_POST['email']) && isset($_POST['password'])) {
-            $email = $_POST['email'];
-            $password = $_POST['password'];
-        }
-        $this->render('index');
+//        if (isset($_POST['email']) && isset($_POST['password'])) {
+//            $email = $_POST['email'];
+//            $password = $_POST['password'];
+//        }
+        $this->render("/profile/index");
 
     }
 }
