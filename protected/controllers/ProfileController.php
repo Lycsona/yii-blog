@@ -4,7 +4,11 @@ class ProfileController extends Controller
 {
     public function actionIndex()
     {
-
-        $this->render('index');
+        session_start();
+        if (isset($_SESSION['user'])) {
+            $this->render('index');
+        } else {
+            $this->redirect(array('registration/index'));
+        }
     }
 }

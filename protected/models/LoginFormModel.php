@@ -45,9 +45,12 @@ class LoginFormModel extends CFormModel
         $pass = $model->password;
         $user = Users::model()->findAll("email =  '$email' and password = '$pass'");
         if (!empty($user)) {
-            return true;
+
+            $user = $user[0]->attributes;
+
+            return $user;
         } else {
-            echo 'error';
+            return false;
         }
     }
 }

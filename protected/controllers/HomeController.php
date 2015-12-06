@@ -15,11 +15,17 @@ class HomeController extends Controller
 
             var_dump($_POST['LoginFormModel']);
 
+
             $model->attributes = $_POST['LoginFormModel'];
             $model->rememberMe = false;
 
             // validate user input and redirect to the previous page if valid
+//            CVarDumper::dump($model->login($model), 10, true);
             if ($model->login($model)) {
+
+                $user = $model->login($model);
+                session_start();
+                $_SESSION['user'] = $user;
 
                 $this->redirect('/blog/profile/index');
             } else {

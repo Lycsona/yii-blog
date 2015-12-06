@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Blog</title>
     <!-- Bootstrap -->
     <!-- Material Design fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
@@ -88,7 +88,7 @@
             <?php echo CHtml::beginForm(); ?>
             <?php echo CHtml::errorSummary($model) ?>
 
-            <legend class="text-center">Создание нового профиля</legend>
+            <legend class="text-center">Пожалуйста, зарегистрируйтесь!</legend>
 
             <div class="col-md-12 form-group">
                 <?php echo CHtml::activeLabel($model, 'Firstname *:'); ?>
