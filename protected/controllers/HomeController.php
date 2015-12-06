@@ -27,9 +27,9 @@ class HomeController extends Controller
                 session_start();
                 $_SESSION['user'] = $user;
 
-                $this->redirect('/blog/profile/index');
+                $this->redirect(array('profile/index'));
             } else {
-                echo 'error';
+                $this->redirect(array('registration/index'));
             }
 
         }
