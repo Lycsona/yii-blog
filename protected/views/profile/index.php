@@ -81,6 +81,32 @@
 <!--HEADER END-->
 
 <!--CONTENT START-->
+<div class="row">
+    <div class=" container col-md-offset-1 ">
+        <div class="col-md-8  jumbotron">
+
+            <h1>Твои статьи</h1>
+            <p>Описание</p>
+
+        </div>
+
+        <div class=" container col-md-offset-9 ">
+            <div class="col-md-4  jumbotron">
+
+                <h1>Меню </h1>
+
+                <div class="btn-group-vertical">
+                    <a href="javascript:void(0)" class="btn btn-raised">Button</a>
+                    <a href="javascript:void(0)" class="btn btn-raised">Button</a>
+                    <a href="javascript:void(0)" class="btn btn-raised">Button</a>
+                    <a href="javascript:void(0)" class="btn btn-raised">Button</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!--CONTENT END-->
 </body>
