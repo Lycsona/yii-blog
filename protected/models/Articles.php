@@ -1,10 +1,10 @@
 <?php
 
 /**
- * This is the model class for table "{{aticles}}".
+ * This is the model class for table "{{articles}}".
  * @package application.models
  *
- * The followings are the available columns in table '{{aticles}}':
+ * The followings are the available columns in table '{{articles}}':
  * @property integer $id
  * @property string $title
  * @property string $aticle
@@ -12,11 +12,11 @@
  * @property string $created_at
  * @property string $imj
  */
-class Aticles extends CActiveRecord
+class Articles extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
-	 * @return Aticles the static model class
+	 * @return Articles the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -28,7 +28,7 @@ class Aticles extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{aticles}}';
+		return '{{articles}}';
 	}
 
 	/**

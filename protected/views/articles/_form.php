@@ -12,7 +12,7 @@ else
 }
 
 $form = $this->beginWidget('bs.TbActiveForm', array(
-	'id' => 'aticles-form',
+	'id' => 'articles-form',
 	'type' => 'horizontal',
 	'enableAjaxValidation' => false,
 	'inlineErrors' => false,

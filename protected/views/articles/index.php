@@ -1,6 +1,6 @@
 <?php
 
-$this->pageTitle = Yii::t('app', 'Aticles');
+$this->pageTitle = Yii::t('app', 'Articles');
 
 $this->breadcrumbs = array(
 	$this->pageTitle,
@@ -8,10 +8,10 @@ $this->breadcrumbs = array(
 
 // search form
 
-Yii::app()->clientScript->registerScript('aticles#search', "
+Yii::app()->clientScript->registerScript('articles#search', "
 jQuery('.search-toggle').click(function(){ jQuery('.search-form').toggle(); return false; });
 jQuery('.search-form form').submit(function(){
-	jQuery.fn.yiiGridView.update('aticles-grid', { data: jQuery(this).serialize() });
+	jQuery.fn.yiiGridView.update('articles-grid', { data: jQuery(this).serialize() });
 	return false;
 });");
 
@@ -34,7 +34,7 @@ echo CHtml::tag('div', array('id'=>'search-form', 'class'=>'search-form', 'style
 	$this->renderPartial('_search', array('model'=>$model), true), true);
 
 $this->widget('bs.TbGridView', array(
-	'id' => 'aticles-grid',
+	'id' => 'articles-grid',
 	'filter' => $model,
 	'dataProvider' => $dataProvider,
 	'columns' => array(

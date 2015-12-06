@@ -2,7 +2,7 @@
 $this->pageTitle = CHtml::encode($model->title);
 
 $this->breadcrumbs = array(
-	Yii::t('app', 'Aticles') => array('index'),
+	Yii::t('app', 'Articles') => array('index'),
 	$model->title,
 );
 

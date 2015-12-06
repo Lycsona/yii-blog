@@ -1,20 +1,20 @@
 <?php
 
 /**
- * Aticles management controller class.
+ * Articles management controller class.
  * @package application.controllers
  */
-class AticlesController extends Controller
+class ArticlesController extends Controller
 {
 	/**
 	 * Manages all models.
 	 */
 	public function actionIndex()
 	{
-		$model = new Aticles('search');
+		$model = new Articles('search');
 
-		if(isset($_GET['Aticles']))
-			$model->attributes = $_GET['Aticles'];
+		if(isset($_GET['Articles']))
+			$model->attributes = $_GET['Articles'];
 
 		$dataProvider = $model->search();
 
@@ -30,7 +30,7 @@ class AticlesController extends Controller
 	 */
 	public function actionView($id)
 	{
-		if(!($model = Aticles::model()->findByPk($id)))
+		if(!($model = Articles::model()->findByPk($id)))
 			throw new CHttpException(404, Yii::t('app', 'Page not found.'));
 		else
 		{
@@ -46,7 +46,7 @@ class AticlesController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model = new Aticles;
+		$model = new Articles;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -54,9 +54,9 @@ class AticlesController extends Controller
 		if(isset($_POST['cancel']))
 			$this->redirect(array('index'));
 
-		if(isset($_POST['Aticles']))
+		if(isset($_POST['Articles']))
 		{
-			$model->attributes = $_POST['Aticles'];
+			$model->attributes = $_POST['Articles'];
 
 			if($model->save())
 				$this->redirect(array('view','id' => $model->id));
@@ -73,7 +73,7 @@ class AticlesController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
-		if(!($model = Aticles::model()->findByPk($id)))
+		if(!($model = Articles::model()->findByPk($id)))
 			throw new CHttpException(404, Yii::t('app', 'Page not found.'));
 		else
 		{
@@ -83,9 +83,9 @@ class AticlesController extends Controller
 			// Uncomment the following line if AJAX validation is needed
 			// $this->performAjaxValidation($model);
 
-			if(isset($_POST['Aticles']))
+			if(isset($_POST['Articles']))
 			{
-				$model->attributes = $_POST['Aticles'];
+				$model->attributes = $_POST['Articles'];
 
 				if($model->save())
 					$this->redirect(array('view', 'id' => $model->id));
@@ -104,7 +104,7 @@ class AticlesController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		if(!($model = Aticles::model()->findByPk($id)))
+		if(!($model = Articles::model()->findByPk($id)))
 			throw new CHttpException(404, Yii::t('app', 'Page not found.'));
 		else
 		{
@@ -122,7 +122,7 @@ class AticlesController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax'] === 'aticles-form')
+		if(isset($_POST['ajax']) && $_POST['ajax'] === 'articles-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

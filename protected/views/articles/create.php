@@ -3,7 +3,7 @@
 $this->pageTitle = Yii::t('app', 'Create');
 
 $this->breadcrumbs = array(
-	Yii::t('app', 'Aticles') => array('index'),
+	Yii::t('app', 'Articles') => array('index'),
 	$this->pageTitle,
 );
 
