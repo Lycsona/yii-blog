@@ -11,4 +11,11 @@ class ProfileController extends Controller
             $this->redirect(array('registration/index'));
         }
     }
+
+    public function actionExit()
+    {
+        session_start();
+        session_destroy();
+        $this->redirect(array('home/index'));
+    }
 }

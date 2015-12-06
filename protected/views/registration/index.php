@@ -54,7 +54,7 @@
                         <li><a href="javascript:void(0)">One more separated link</a></li>
                     </ul>
                 </li>
-                <li><a href="javascript:void(0)">Выйти</a></li>
+                <li><a href="<?php echo Yii::app()->baseUrl ?>/profile/exit">Выйти</a></li>
             </ul>
             <form class="navbar-form navbar-left">
                 <div class="form-group">
