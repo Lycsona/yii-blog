@@ -86,20 +86,20 @@
         <div class="col-md-8  jumbotron">
 
             <h1>Твои статьи</h1>
+
             <p>Описание</p>
 
         </div>
 
-        <div class=" container col-md-offset-9 ">
+        <div class=" container col-md-offset-8 ">
             <div class="col-md-4  jumbotron">
 
                 <h1>Меню </h1>
 
-                <div class="btn-group-vertical">
-                    <a href="javascript:void(0)" class="btn btn-raised">Button</a>
-                    <a href="javascript:void(0)" class="btn btn-raised">Button</a>
-                    <a href="javascript:void(0)" class="btn btn-raised">Button</a>
-                    <a href="javascript:void(0)" class="btn btn-raised">Button</a>
+                <div class="btn-group-vertical ">
+                    <a href="<?php echo Yii::app()->baseUrl ?>/articles/index" class="btn btn-raised">Добавить</a>
+                    <a href="javascript:void(0)" class="btn btn-raised">Редактировать</a>
+                    <a href="javascript:void(0)" class="btn btn-raised">Удалить</a>
                 </div>
 
             </div>
