@@ -22,6 +22,7 @@
     Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/bootstrap.min.js', CClientScript::POS_END);
     Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/material.min.js', CClientScript::POS_END);
     Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/ripples.min.js', CClientScript::POS_END);
+
     ?>
 </head>
 
@@ -86,9 +87,9 @@
 <div class="row">
     <div class="container ">
         <div class="col-md-8 col-md-offset-2 jumbotron">
-            <!--            <form class="form-horizontal" action="-->
-            <?php //echo Yii::app()->baseUrl ?><!--/home/index" method="POST">-->
-            <h3 class="text-center">Новая статья</h3>
+
+            <legend class="text-center">Новая статья</legend>
+
             <?php echo CHtml::beginForm(); ?>
             <?php echo CHtml::errorSummary($model) ?>
 
@@ -116,8 +117,7 @@
                     array(
                         'class' => 'form-control',
                         'placeholder' => '  ',
-                        'rows'=>6, 'cols'=>50
-
+                        'rows' => 6, 'cols' => 50
                     )); ?>
             </div>
 
@@ -141,10 +141,10 @@
             </div>
 
             <?php echo CHtml::endForm(); ?>
+
         </div>
     </div>
 </div>
-
 <!--CONTENT END-->
 </body>
 </html>

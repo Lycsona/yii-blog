@@ -37,7 +37,7 @@ class Articles extends CActiveRecord
 	public function rules()
 	{
 		return array(
-			array('title, aticle, description, created_at', 'required'),
+			array('title, aticle, description', 'required'),
 			array('title, imj', 'length', 'max'=>50),
 			// The following rule is used by search().
 			array('id, title, aticle, description, created_at, imj', 'safe', 'on'=>'search'),

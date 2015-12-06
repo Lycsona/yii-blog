@@ -2162,3 +2162,147 @@ Stack trace:
 REQUEST_URI=/Blog/articles/index
 HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
 ---
+2015/12/06 21:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/ripples.min.js.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('js/ripples.min....')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/js/ripples.min.js.map
+---
+2015/12/06 21:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/material.min.js.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('js/material.min...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/js/material.min.js.map
+---
+2015/12/06 21:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/bootstrap.min.css.map
+---
+2015/12/06 21:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap-theme.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap-t...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/bootstrap-theme.min.css.map
+---
+2015/12/06 21:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap-material-design.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap-m...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/bootstrap-material-design.min.css.map
+---
+2015/12/06 21:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ripples.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ripples.min...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/ripples.min.css.map
+---
+2015/12/06 21:34:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/bootstrap.min.css.map
+---
+2015/12/06 21:34:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap-theme.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap-t...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/bootstrap-theme.min.css.map
+---
+2015/12/06 21:34:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap-material-design.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap-m...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/bootstrap-material-design.min.css.map
+---
+2015/12/06 21:34:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ripples.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ripples.min...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/ripples.min.css.map
+---
+2015/12/06 21:34:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/material.min.js.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('js/material.min...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/js/material.min.js.map
+---
+2015/12/06 21:34:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/ripples.min.js.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('js/ripples.min....')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/js/ripples.min.js.map
+---
+2015/12/06 21:34:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/bootstrap.min.css.map
+---
+2015/12/06 21:34:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap-theme.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap-t...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/bootstrap-theme.min.css.map
+---
+2015/12/06 21:34:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap-material-design.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap-m...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/bootstrap-material-design.min.css.map
+---
+2015/12/06 21:34:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ripples.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ripples.min...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/ripples.min.css.map
+---
+2015/12/06 21:34:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/material.min.js.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('js/material.min...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/js/material.min.js.map
+---
+2015/12/06 21:34:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/ripples.min.js.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('js/ripples.min....')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/js/ripples.min.js.map
+---
