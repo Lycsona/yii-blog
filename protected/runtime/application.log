@@ -1953,3 +1953,26 @@ Stack trace:
 REQUEST_URI=/Blog/registration/index
 HTTP_REFERER=http://host1.server1/Blog/
 ---
+2015/12/06 19:11:37 [error] [exception.CException] exception 'CException' with message 'Alias "bs.TbPanel" is invalid. Make sure it points to an existing directory or file.' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWidgetFactory.php(146): YiiBase::import('bs.TbPanel', true)
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(AticlesController), 'bs.TbPanel', Array)
+#2 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CBaseController.php(197): CBaseController->createWidget('bs.TbPanel', Array)
+#3 /var/www/host1.server1/public_html/Blog/protected/views/aticles/index.php(20): CBaseController->beginWidget('bs.TbPanel', Array)
+#4 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CBaseController.php(126): require('/var/www/host1....')
+#5 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/host1....', Array, true)
+#6 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(869): CBaseController->renderFile('/var/www/host1....', Array, true)
+#7 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /var/www/host1.server1/public_html/Blog/protected/controllers/AticlesController.php(24): CController->render('index', Array)
+#9 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/actions/CInlineAction.php(49): AticlesController->actionIndex()
+#10 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('aticles')
+#15 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/Blog/index.php/aticles
+HTTP_REFERER=http://host1.server1/Blog/index.php/gii/crud/index
+---
