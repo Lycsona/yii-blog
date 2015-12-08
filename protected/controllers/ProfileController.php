@@ -6,8 +6,16 @@ class ProfileController extends Controller
     {
         session_start();
         if (isset($_SESSION['user'])) {
+            $userId = $_SESSION['user']['id'];
+//            $model = Articles::model()->findAll();
+            $sql = "
+    SELECT *
+      FROM `tbl_articles`
+INNER JOIN `tbl_user_articles`
+        ON `tbl_user_articles`.`article_id` = `tbl_articles`.`id`
+       AND `tbl_user_articles`.`user_id` = '$userId'";
 
-            $model = Articles::model()->findAll();
+            $model=Articles::model()->findAllBySql($sql);
 
             $this->render('index', array(
                 'model' => $model,

@@ -1,6 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="MySQL - @localhost" uuid="b049ebe9-1d4f-4e93-b94d-1c89380bea58">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+    <database-info product="MySQL" version="5.6.27-0ubuntu1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.2">
+      <schema id="1" name="blog"/>
+      <table id="2" parent="1" name="tbl_articles"/>
+      <table id="3" parent="1" name="tbl_user_articles"/>
+      <table id="4" parent="1" name="tbl_users"/>
+      <column id="5" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="6" parent="2" name="title">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="7" parent="2" name="aticle">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="8" parent="2" name="description">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="9" parent="2" name="created_at">
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="10" parent="2" name="imj">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <key id="11" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="12" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="13" parent="3" name="user_id">
+        <data-type>int(5)</data-type>
+      </column>
+      <column id="14" parent="3" name="article_id">
+        <data-type>int(5)</data-type>
+      </column>
+      <key id="15" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="16" parent="3" name="tbl_user_articles_ibfk_1">
+        <columns>user_id</columns>
+        <ref-key>tbl_users.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="17" parent="3" name="tbl_user_articles_ibfk_2">
+        <columns>article_id</columns>
+        <ref-key>tbl_articles.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="18" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="19" parent="4" name="firstname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+      </column>
+      <column id="20" parent="4" name="lastname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="21" parent="4" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="22" parent="4" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)</data-type>
+      </column>
+      <column id="23" parent="4" name="ip">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+      </column>
+      <column id="24" parent="4" name="created_add">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="25" parent="4" name="gender">
+        <mandatory>1</mandatory>
+        <data-type>int(3)</data-type>
+      </column>
+      <column id="26" parent="4" name="city">
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="27" parent="4" name="birthday">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="28" parent="4" name="avatar">
+        <data-type>varchar(30)</data-type>
+      </column>
+      <key id="29" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
   </data-source>
 </component>

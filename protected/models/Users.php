@@ -37,7 +37,8 @@ class Users extends CActiveRecord
         return array(
             array('firstname, lastname, email, password, ip, gender', 'required'),
             array('ip, gender', 'numerical', 'integerOnly' => true),
-            array('firstname, lastname, email, password, birthday', 'length', 'max' => 20),
+            array('firstname, lastname, email, birthday', 'length', 'max' => 20),
+            array('password', 'length', 'max' => 100),
             array('city', 'length', 'max' => 15),
             array('avatar', 'length', 'max' => 50),
             array('created_add', 'safe'),

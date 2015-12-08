@@ -13,14 +13,12 @@ class HomeController extends Controller
         // collect user input data
         if (isset($_POST['LoginFormModel'])) {
 
-            var_dump($_POST['LoginFormModel']);
-
-
-            $model->attributes = $_POST['LoginFormModel'];
+            $model->email = $_POST['LoginFormModel']['email'];
+            $model->password = md5($_POST['LoginFormModel']['password']);
             $model->rememberMe = false;
 
             // validate user input and redirect to the previous page if valid
-//            CVarDumper::dump($model->login($model), 10, true);
+            //  CVarDumper::dump($model, 10, true);
             if ($model->login($model)) {
 
                 $user = $model->login($model);
