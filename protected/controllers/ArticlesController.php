@@ -29,6 +29,8 @@ class ArticlesController extends Controller
         ));
     }
 
+
+
     /**
      * Shows a particular model.
      * @param integer $id the model ID.

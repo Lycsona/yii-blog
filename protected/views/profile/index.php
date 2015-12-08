@@ -86,9 +86,26 @@
         <div class="col-md-8  jumbotron">
 
             <h1>Твои статьи</h1>
+            <?php foreach ($model as $value) { ?>
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center " style="color: #000020"><?php echo $value->title; ?> </h3>
+                    </div>
+                    <div class="panel-body">
+                        <p><i> <?php echo $value->description; ?> </i></p>
 
-            <p>Описание</p>
-
+                        <p> <?php echo $value->aticle; ?></p>
+                    </div>
+                </div>
+            <?php } ?>
+            <!--         --><?php //foreach ($model as $value) {
+            //                        echo "<div class=\"card\" style='margin-bottom: 20px'>";
+            //                     echo "<h2>" . $value->title . "</h2>";
+            //                         echo "<p>" . "<i>" . $value->description . "</i>" . "</p>";
+            //                         echo "<p>" . $value->aticle . "</p>";
+            //                         echo "</div>";
+            //                        } ?>
+            <!---->
         </div>
 
         <div class=" container col-md-offset-8 ">

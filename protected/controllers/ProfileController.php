@@ -6,7 +6,12 @@ class ProfileController extends Controller
     {
         session_start();
         if (isset($_SESSION['user'])) {
-            $this->render('index');
+
+            $model = Articles::model()->findAll();
+
+            $this->render('index', array(
+                'model' => $model,
+            ));
         } else {
             $this->redirect(array('registration/index'));
         }
