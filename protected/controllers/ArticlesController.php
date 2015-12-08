@@ -21,14 +21,22 @@ class ArticlesController extends Controller
         if (isset($_POST['Articles'])) {
             $model->attributes = $_POST['Articles'];
 
-            if ($model->save())
+            if ($model->save()) {
+                //___________________
+                $modelUserArticles = new UserArticles;
+                session_start();
+                $modelUserArticles->user_id = $_SESSION['user']['id'];
+                $modelUserArticles->article_id = $model->id;
+                $modelUserArticles->save();
+                //___________________
                 $this->redirect(array('profile/index'));
+            }
         }
+
         $this->render('index', array(
             'model' => $model,
         ));
     }
-
 
 
     /**

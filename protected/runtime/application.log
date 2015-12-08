@@ -2558,3 +2558,25 @@ REQUEST_URI=/Blog/index.php/profile/index
 in /var/www/host1.server1/public_html/Blog/protected/views/profile/index.php (89)
 in /var/www/host1.server1/public_html/Blog/protected/controllers/ProfileController.php (14)
 in /var/www/host1.server1/public_html/Blog/index.php (13)
+2015/12/08 20:10:24 [error] [php] Undefined variable: _SESSION (/var/www/host1.server1/public_html/Blog/protected/controllers/ArticlesController.php:27)
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(286): ArticlesController->runAction()
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(265): ArticlesController->runActionWithFilters()
+#2 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(282): ArticlesController->run()
+#3 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/host1.server1/public_html/Blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/Blog/articles/index
+in /var/www/host1.server1/public_html/Blog/protected/controllers/ArticlesController.php (27)
+in /var/www/host1.server1/public_html/Blog/index.php (13)
+2015/12/08 20:14:05 [error] [php] Undefined variable: _SESSION (/var/www/host1.server1/public_html/Blog/protected/controllers/ArticlesController.php:27)
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(286): ArticlesController->runAction()
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(265): ArticlesController->runActionWithFilters()
+#2 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(282): ArticlesController->run()
+#3 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/host1.server1/public_html/Blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/Blog/articles/index
+in /var/www/host1.server1/public_html/Blog/protected/controllers/ArticlesController.php (27)
+in /var/www/host1.server1/public_html/Blog/index.php (13)
