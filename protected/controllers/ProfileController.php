@@ -14,7 +14,7 @@ class ProfileController extends Controller
 INNER JOIN `tbl_user_articles`
         ON `tbl_user_articles`.`article_id` = `tbl_articles`.`id`
        AND `tbl_user_articles`.`user_id` = '$userId'
-  ORDER BY `tbl_articles`.title DESC     ";
+  ORDER BY `tbl_articles`.title DESC  LIMIT 5  ";
 
 
             $model = Articles::model()->findAllBySql($sql);
