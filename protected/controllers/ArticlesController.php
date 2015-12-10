@@ -91,6 +91,7 @@ class ArticlesController extends Controller
      */
     public function actionDelete($id)
     {
+
         if (!($model = Articles::model()->findByPk($id)))
             throw new CHttpException(404, Yii::t('app', 'Page not found.'));
         else {

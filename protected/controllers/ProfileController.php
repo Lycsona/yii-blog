@@ -13,9 +13,11 @@ class ProfileController extends Controller
       FROM `tbl_articles`
 INNER JOIN `tbl_user_articles`
         ON `tbl_user_articles`.`article_id` = `tbl_articles`.`id`
-       AND `tbl_user_articles`.`user_id` = '$userId'";
+       AND `tbl_user_articles`.`user_id` = '$userId'
+  ORDER BY `tbl_articles`.title DESC     ";
 
-            $model=Articles::model()->findAllBySql($sql);
+
+            $model = Articles::model()->findAllBySql($sql);
 
             $this->render('index', array(
                 'model' => $model,

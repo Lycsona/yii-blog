@@ -95,6 +95,9 @@
                         <p><i> <?php echo $value->description; ?> </i></p>
 
                         <p> <?php echo $value->aticle; ?></p>
+
+                        <a href="<?php echo Yii::app()->baseUrl ?>/articles/update" name="<?php $value->id ?>" class="btn btn-raised">Редактировать</a>
+                        <a href="<?php echo Yii::app()->baseUrl ?>/articles/delete" class="btn btn-raised">Удалить</a>
                     </div>
                 </div>
             <?php } ?>
@@ -114,9 +117,8 @@
                 <h1>Меню </h1>
 
                 <div class="btn-group-vertical ">
-                    <a href="<?php echo Yii::app()->baseUrl ?>/articles/index" class="btn btn-raised">Добавить</a>
-                    <a href="javascript:void(0)" class="btn btn-raised">Редактировать</a>
-                    <a href="javascript:void(0)" class="btn btn-raised">Удалить</a>
+                    <a href="<?php echo Yii::app()->baseUrl ?>/articles/index" class="btn btn-raised">Добавить
+                        статью</a>
                 </div>
 
             </div>
