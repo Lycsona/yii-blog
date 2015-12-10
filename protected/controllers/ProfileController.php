@@ -9,7 +9,7 @@ class ProfileController extends Controller
             $userId = $_SESSION['user']['id'];
 //            $model = Articles::model()->findAll();
             $sql = "
-SELECT `tbl_articles`.`id`,`tbl_articles`.`title`,`tbl_articles`.`description`,`tbl_articles`.`imj`,`tbl_articles`.`created_at`
+SELECT `tbl_articles`.`id`,`tbl_articles`.`title`,`tbl_articles`.`aticle`,`tbl_articles`.`description`,`tbl_articles`.`imj`,`tbl_articles`.`created_at`
 FROM `tbl_articles`
   INNER JOIN `tbl_user_articles`
     ON `tbl_user_articles`.`article_id` = `tbl_articles`.`id`

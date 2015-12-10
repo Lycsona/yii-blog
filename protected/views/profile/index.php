@@ -94,10 +94,10 @@
                     <div class="panel-body">
                         <p><i> <?php echo $value->description; ?> </i></p>
 
-                        <p> <?php echo $value->aticle; ?></p>
+                        <p> <?php echo $value->aticle;?></p>
 
                         <a href="<?php echo Yii::app()->baseUrl ?>/articles/update/<?php echo $value->id ?>" class="btn btn-raised">Редактировать</a>
-                        <a href="<?php echo Yii::app()->baseUrl ?>/articles/delete" class="btn btn-raised">Удалить</a>
+                        <a href="<?php echo Yii::app()->baseUrl ?>/articles/delete/<?php echo $value->id ?>" class="btn btn-raised">Удалить</a>
                     </div>
                 </div>
             <?php } ?>
