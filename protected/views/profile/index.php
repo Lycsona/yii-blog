@@ -86,7 +86,7 @@
         <div class="col-md-8  jumbotron">
 
             <h1>Твои статьи</h1>
-            <?php foreach ($model as $value) { ?>
+            <?php foreach ($models as $value) { ?>
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title text-center " style="color: #000020"><?php echo $value->title; ?> </h3>
@@ -94,14 +94,17 @@
                     <div class="panel-body">
                         <p><i> <?php echo $value->description; ?> </i></p>
 
-                        <p> <?php echo $value->aticle;?></p>
+                        <p> <?php echo $value->aticle; ?></p>
 
-                        <a href="<?php echo Yii::app()->baseUrl ?>/articles/update/<?php echo $value->id ?>" class="btn btn-raised">Редактировать</a>
-                        <a href="<?php echo Yii::app()->baseUrl ?>/articles/delete/<?php echo $value->id ?>" class="btn btn-raised">Удалить</a>
+                        <a href="<?php echo Yii::app()->baseUrl ?>/articles/update/<?php echo $value->id ?>"
+                           class="btn btn-raised btn-warning">Редактировать</a>
+                        <a href="<?php echo Yii::app()->baseUrl ?>/articles/delete/<?php echo $value->id ?>"
+                           class="btn btn-raised">Удалить</a>
                     </div>
                 </div>
             <?php } ?>
         </div>
+
 
         <div class=" container col-md-offset-8 ">
             <div class="col-md-4  jumbotron">
@@ -118,7 +121,16 @@
     </div>
 </div>
 
-
+<div class="row">
+    <!--                // рисуем пейджер-->
+    <?php
+    $this->widget('CLinkPager', array(
+        'pages' => $pages,
+        'prevPageLabel' => '&laquo; назад',
+        'nextPageLabel' => 'далее &raquo;'
+    ));
+    ?>
+</div>
 <!--CONTENT END-->
 </body>
 </html>

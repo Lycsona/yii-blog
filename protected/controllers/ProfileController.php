@@ -17,11 +17,28 @@ FROM `tbl_articles`
 ORDER BY `tbl_articles`.id DESC";
 
 
-            $model = Articles::model()->findAllBySql($sql);
+            //   $model = Articles::model()->findAllBySql($sql);
 
+
+            //________________
+            $criteria = new CDbCriteria();
+            $count = Articles::model()->count($criteria);
+
+            $pages = new CPagination($count);
+            // элементов на страницу
+            $pages->pageSize = 1;
+            $pages->applyLimit($criteria);
+
+            $models = Articles::model()->findAll($criteria);
             $this->render('index', array(
-                'model' => $model,
+                'models' => $models,
+                'pages' => $pages,
             ));
+            //________________
+
+//            $this->render('index', array(
+//                'model' => $model,
+//            ));
         } else {
             $this->redirect(array('registration/index'));
         }
