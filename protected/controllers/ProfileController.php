@@ -9,12 +9,12 @@ class ProfileController extends Controller
             $userId = $_SESSION['user']['id'];
 //            $model = Articles::model()->findAll();
             $sql = "
-    SELECT *
-      FROM `tbl_articles`
-INNER JOIN `tbl_user_articles`
-        ON `tbl_user_articles`.`article_id` = `tbl_articles`.`id`
+SELECT `tbl_articles`.`id`,`tbl_articles`.`title`,`tbl_articles`.`description`,`tbl_articles`.`imj`,`tbl_articles`.`created_at`
+FROM `tbl_articles`
+  INNER JOIN `tbl_user_articles`
+    ON `tbl_user_articles`.`article_id` = `tbl_articles`.`id`
        AND `tbl_user_articles`.`user_id` = '$userId'
-  ORDER BY `tbl_articles`.title DESC  LIMIT 5  ";
+ORDER BY `tbl_articles`.id DESC";
 
 
             $model = Articles::model()->findAllBySql($sql);

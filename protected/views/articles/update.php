@@ -22,10 +22,12 @@
     Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/bootstrap.min.js', CClientScript::POS_END);
     Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/material.min.js', CClientScript::POS_END);
     Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/ripples.min.js', CClientScript::POS_END);
+
     ?>
 </head>
 
 <body class=" bg-warning">
+
 
 <!--HEADER START-->
 <div class="navbar navbar-warning ">
@@ -81,44 +83,68 @@
 <!--HEADER END-->
 
 <!--CONTENT START-->
+
 <div class="row">
-    <div class=" container col-md-offset-1 ">
-        <div class="col-md-8  jumbotron">
+    <div class="container ">
+        <div class="col-md-8 col-md-offset-2 jumbotron">
 
-            <h1>Твои статьи</h1>
-            <?php foreach ($model as $value) { ?>
-                <div class="panel panel-warning">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center " style="color: #000020"><?php echo $value->title; ?> </h3>
-                    </div>
-                    <div class="panel-body">
-                        <p><i> <?php echo $value->description; ?> </i></p>
+            <legend class="text-center">Редактировать статью</legend>
 
-                        <p> <?php echo $value->aticle; ?></p>
+            <?php echo CHtml::beginForm(); ?>
+            <?php echo CHtml::errorSummary($model) ?>
 
-                        <a href="<?php echo Yii::app()->baseUrl ?>/articles/update/<?php echo $value->id ?>" class="btn btn-raised">Редактировать</a>
-                        <a href="<?php echo Yii::app()->baseUrl ?>/articles/delete" class="btn btn-raised">Удалить</a>
-                    </div>
-                </div>
-            <?php } ?>
-        </div>
-
-        <div class=" container col-md-offset-8 ">
-            <div class="col-md-4  jumbotron">
-
-                <h1>Меню </h1>
-
-                <div class="btn-group-vertical ">
-                    <a href="<?php echo Yii::app()->baseUrl ?>/articles/index" class="btn btn-raised ">Добавить
-                        статью</a>
-                </div>
-
+            <div class="col-md-12 form-group">
+                <?php echo CHtml::activeLabel($model, 'Title : '); ?>
+                <?php echo CHtml::activeTextField($model, 'title',
+                    array(
+                        'class' => 'form-control',
+                        'placeholder' => $model->title,
+                    )); ?>
             </div>
+
+            <div class="col-md-12 form-group">
+                <?php echo CHtml::activeLabel($model, 'Description : '); ?>
+                <?php echo CHtml::activeTextField($model, 'description',
+                    array(
+                        'class' => 'form-control',
+                        'placeholder' => $model->description,
+                    )); ?>
+            </div>
+
+            <div class="col-md-12 form-group">
+                <?php echo CHtml::activeLabel($model, 'Article : '); ?>
+                <?php echo CHtml::activeTextArea($model, 'aticle',
+                    array(
+                        'class' => 'form-control',
+                        'placeholder' => $model->aticle,
+                        'rows' => 6, 'cols' => 50
+                    )); ?>
+            </div>
+
+            <div class="col-md-12 form-group">
+                <?php echo CHtml::activeLabel($model, 'Image : '); ?>
+                <?php echo CHtml::activeTextField($model, 'imj',
+                    array(
+                        'class' => 'form-control',
+                        'placeholder' => $model->imj,
+                    )); ?>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4 col-md-offset-8 ">
+
+                    <?php echo CHtml::submitButton('Изменить', array(
+                        'submit' => array('articles/update'),
+                        'class' => 'btn btn-raised btn-warning ',
+                    )); ?>
+                </div>
+            </div>
+
+            <?php echo CHtml::endForm(); ?>
+
         </div>
     </div>
 </div>
-
-
 <!--CONTENT END-->
 </body>
 </html>

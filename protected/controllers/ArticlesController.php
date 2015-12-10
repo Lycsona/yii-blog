@@ -25,6 +25,7 @@ class ArticlesController extends Controller
                 //___________________
                 $modelUserArticles = new UserArticles;
                 session_start();
+
                 $modelUserArticles->user_id = $_SESSION['user']['id'];
                 $modelUserArticles->article_id = $model->id;
                 $modelUserArticles->save();
@@ -75,7 +76,7 @@ class ArticlesController extends Controller
                 $model->attributes = $_POST['Articles'];
 
                 if ($model->save())
-                    $this->redirect(array('view', 'id' => $model->id));
+                    $this->redirect(array('profile/index'));
             }
 
             $this->render('update', array(
