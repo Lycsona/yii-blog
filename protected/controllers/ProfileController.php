@@ -19,7 +19,6 @@ ORDER BY `tbl_articles`.id DESC";
 
             //   $model = Articles::model()->findAllBySql($sql);
 
-
             //________________
             $criteria = new CDbCriteria();
             $count = Articles::model()->count($criteria);

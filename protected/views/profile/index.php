@@ -122,14 +122,18 @@
 </div>
 
 <div class="row">
-    <!--                // рисуем пейджер-->
-    <?php
-    $this->widget('CLinkPager', array(
-        'pages' => $pages,
-        'prevPageLabel' => '&laquo; назад',
-        'nextPageLabel' => 'далее &raquo;'
-    ));
-    ?>
+    <div class=" container col-md-offset-1 ">
+        <div class="col-md-8  jumbotron text-center">
+            <!--                // рисуем пейджер-->
+            <?php
+            $this->widget('CLinkPager', array(
+                'pages' => $pages,
+                'prevPageLabel' => '&laquo; назад',
+                'nextPageLabel' => 'далее &raquo;'
+            ));
+            ?>
+        </div>
+    </div>
 </div>
 <!--CONTENT END-->
 </body>
