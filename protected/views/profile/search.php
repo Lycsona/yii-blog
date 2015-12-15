@@ -79,7 +79,7 @@
 <!--CONTENT START-->
 <div class="row">
     <div class=" container col-md-offset-1 ">
-        <div class="col-md-8  jumbotron">
+        <div class="col-md-9  jumbotron">
 
             <h1>Результат поиска</h1>
             <?php foreach ($model as $value) { ?>
@@ -102,8 +102,8 @@
         </div>
 
 
-        <div class=" container col-md-offset-8 ">
-            <div class="col-md-4  jumbotron">
+        <div class=" container col-md-offset-10 ">
+            <div class="col-md-3  jumbotron">
 
                 <h1>Меню </h1>
 

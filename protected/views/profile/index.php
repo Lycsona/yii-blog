@@ -79,7 +79,7 @@
 <!--CONTENT START-->
 <div class="row">
     <div class=" container col-md-offset-1 ">
-        <div class="col-md-8  jumbotron">
+        <div class="col-md-9  jumbotron">
 
             <h1>Твои статьи</h1>
             <?php foreach ($models as $value) { ?>
@@ -115,23 +115,23 @@
         </div>
 
 
-        <div class=" container col-md-offset-8 ">
-            <div class="col-md-4  jumbotron">
+        <div class=" container col-md-offset-10 ">
+            <div class="col-md-3  jumbotron">
 
-                <h1>Меню </h1>
+                <h1 class=" text-center">Меню </h1>
 
-                <div class="btn-group-vertical ">
+                <div class="col-md-12 btn-group-vertical text-center">
                     <a href="<?php echo Yii::app()->baseUrl ?>/articles/index" class="btn btn-raised ">Добавить
                         статью</a>
-                </div>
+                </div><br>
 
-                <div class="btn-group-vertical ">
+                <div class="col-md-12 btn-group-vertical ">
 
                     <a href="<?php echo Yii::app()->baseUrl ?>/users/delete/<?php echo $userId ?>" class="btn btn-raised ">Удалить профиль
                     </a>
                 </div>
-
-<!--                <form class="navbar-form navbar-left" action="--><?php //echo Yii::app()->baseUrl ?><!--/protected/components/profile/search " method="POST">-->
+<!---->
+<!--                <form class="navbar-form navbar-left" action="--><?php //echo Yii::app()->baseUrl ?><!--/protected/controllers/ProfileController.php" method="POST">-->
 <!--                    <div class="form-group">-->
 <!--                        <input type="text" class="form-control col-md-8" name="articleTitle" placeholder="Поиск статьи">-->
 <!--                    </div>-->
@@ -141,6 +141,7 @@
 <!--                        </button>-->
 <!--                    </div>-->
 <!--                </form>-->
+
 <!--                <div class="btn-group-vertical ">-->
 <!--                --><?php //echo CHtml::beginForm(); ?>
 <!--                --><?php //echo CHtml::errorSummary($model) ?>
