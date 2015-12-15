@@ -56,11 +56,7 @@
                 </li>
                 <li><a href="<?php echo Yii::app()->baseUrl ?>/profile/exit">Выйти</a></li>
             </ul>
-            <form class="navbar-form navbar-left">
-                <div class="form-group">
-                    <input type="text" class="form-control col-md-8" placeholder="Search">
-                </div>
-            </form>
+
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="<?php echo Yii::app()->baseUrl ?>/registration/index">Зарегистрироваться</a></li>
                 <li class="dropdown">
@@ -116,25 +112,41 @@
                         статью</a>
                 </div>
 
+                <div class="btn-group-vertical ">
+                    <a href="" class="btn btn-raised ">Удалить профиль
+                       </a>
+                </div>
+
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control col-md-8" placeholder="Поиск статьи">
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-fab btn-fab-mini">
+                            <i class="material-icons">send</i>
+                        </button>
+                    </div>
+                </form>
+
+
             </div>
         </div>
     </div>
-</div>
 
-<div class="row">
-    <div class=" container col-md-offset-1 ">
-        <div class="col-md-8  jumbotron text-center">
-            <!--                // рисуем пейджер-->
-            <?php
-            $this->widget('CLinkPager', array(
-                'pages' => $pages,
-                'prevPageLabel' => '&laquo; назад',
-                'nextPageLabel' => 'далее &raquo;'
-            ));
-            ?>
+    <div class="row">
+        <div class=" container col-md-offset-1 ">
+            <div class="col-md-8  jumbotron text-center">
+                <!--                // рисуем пейджер-->
+                <?php
+                $this->widget('CLinkPager', array(
+                    'pages' => $pages,
+                    'prevPageLabel' => '&laquo; назад',
+                    'nextPageLabel' => 'далее &raquo;'
+                ));
+                ?>
+            </div>
         </div>
     </div>
-</div>
-<!--CONTENT END-->
+    <!--CONTENT END-->
 </body>
 </html>
