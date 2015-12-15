@@ -25,7 +25,7 @@ ORDER BY `tbl_articles`.id DESC";
 
             $pages = new CPagination($count);
             // элементов на страницу
-            $pages->pageSize = 1;
+            $pages->pageSize = 2;
             $pages->applyLimit($criteria);
 
             $models = Articles::model()->findAll($criteria);

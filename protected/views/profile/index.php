@@ -99,6 +99,19 @@
                     </div>
                 </div>
             <?php } ?>
+
+            <div class="row">
+                <div class=" container col-md-offset-4 ">
+                    <!--                // рисуем пейджер-->
+                    <?php
+                    $this->widget('CLinkPager', array(
+                        'pages' => $pages,
+                        'prevPageLabel' => '&laquo; назад',
+                        'nextPageLabel' => 'далее &raquo;'
+                    ));
+                    ?>
+                </div>
+            </div>
         </div>
 
 
@@ -114,7 +127,7 @@
 
                 <div class="btn-group-vertical ">
                     <a href="" class="btn btn-raised ">Удалить профиль
-                       </a>
+                    </a>
                 </div>
 
                 <form class="navbar-form navbar-left">
@@ -133,20 +146,7 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class=" container col-md-offset-1 ">
-            <div class="col-md-8  jumbotron text-center">
-                <!--                // рисуем пейджер-->
-                <?php
-                $this->widget('CLinkPager', array(
-                    'pages' => $pages,
-                    'prevPageLabel' => '&laquo; назад',
-                    'nextPageLabel' => 'далее &raquo;'
-                ));
-                ?>
-            </div>
-        </div>
-    </div>
+
     <!--CONTENT END-->
 </body>
 </html>
