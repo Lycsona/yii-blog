@@ -81,8 +81,8 @@
     <div class=" container col-md-offset-1 ">
         <div class="col-md-8  jumbotron">
 
-            <h1>Твои статьи</h1>
-            <?php foreach ($models as $value) { ?>
+            <h1>Результат поиска</h1>
+            <?php foreach ($model as $value) { ?>
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title text-center " style="color: #000020"><?php echo $value->title; ?> </h3>
@@ -99,19 +99,6 @@
                     </div>
                 </div>
             <?php } ?>
-
-            <div class="row">
-                <div class=" container col-md-offset-4 ">
-                    <!--                // рисуем пейджер-->
-                    <?php
-                    $this->widget('CLinkPager', array(
-                        'pages' => $pages,
-                        'prevPageLabel' => '&laquo; назад',
-                        'nextPageLabel' => 'далее &raquo;'
-                    ));
-                    ?>
-                </div>
-            </div>
         </div>
 
 
@@ -126,48 +113,22 @@
                 </div>
 
                 <div class="btn-group-vertical ">
-
-                    <a href="<?php echo Yii::app()->baseUrl ?>/users/delete/<?php echo $userId ?>" class="btn btn-raised ">Удалить профиль
+                    <a href="" class="btn btn-raised ">Удалить профиль
                     </a>
                 </div>
 
-<!--                <form class="navbar-form navbar-left" action="--><?php //echo Yii::app()->baseUrl ?><!--/protected/components/profile/search " method="POST">-->
-<!--                    <div class="form-group">-->
-<!--                        <input type="text" class="form-control col-md-8" name="articleTitle" placeholder="Поиск статьи">-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <button type="button" class="btn btn-fab btn-fab-mini">-->
-<!--                            <i class="material-icons">send</i>-->
-<!--                        </button>-->
-<!--                    </div>-->
-<!--                </form>-->
-<!--                <div class="btn-group-vertical ">-->
-<!--                --><?php //echo CHtml::beginForm(); ?>
-<!--                --><?php //echo CHtml::errorSummary($model) ?>
-<!---->
-<!---->
-<!--                <div class="col-md-12 form-group">-->
-<!--                    --><?php //echo CHtml::activeLabel($model, 'Поиск:'); ?>
-<!--                    --><?php //echo CHtml::activeTextField($model, 'title',
-//                        array(
-//                            'class' => 'form-control',
-//                            'placeholder' => 'введите название сатьи '
-//                        )) ?>
-<!--                </div>-->
-<!---->
-<!--                <div class="form-group">-->
-<!--                    <div class="col-md-9 col-md-offset-6 ">-->
-<!---->
-<!--                        --><?php //echo CHtml::submitButton('Искать', array(
-//                            'submit' => array('profile/search'),
-//                            'class' => 'btn btn-raised btn-warning ',
-//                        )); ?>
-<!--                    </div>-->
-<!--                </div>-->
-<!---->
-<!--                --><?php //echo CHtml::endForm(); ?>
-<!---->
-<!--            </div>-->
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control col-md-8" placeholder="Поиск статьи">
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-fab btn-fab-mini">
+                            <i class="material-icons">send</i>
+                        </button>
+                    </div>
+                </form>
+
+
             </div>
         </div>
     </div>
