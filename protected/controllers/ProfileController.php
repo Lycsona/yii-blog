@@ -46,12 +46,11 @@ ORDER BY `tbl_articles`.id DESC";
 
     public function actionSearch()
     {
-        $model = new Articles();
         session_start();
         if (isset($_SESSION['user']) && isset($_POST['title'])) {
             $userId = $_SESSION['user']['id'];
 
-            $model->title = $_POST['title'];
+            $title = $_POST['title'];
 
             $sql = "
             SELECT `tbl_articles`.`id`,`tbl_articles`.`title`,`tbl_articles`.`aticle`,`tbl_articles`.`description`,`tbl_articles`.`imj`,`tbl_articles`.`created_at`
@@ -59,17 +58,18 @@ ORDER BY `tbl_articles`.id DESC";
             INNER JOIN `tbl_user_articles`
             ON `tbl_user_articles`.`article_id` = `tbl_articles`.`id`
             AND `tbl_user_articles`.`user_id` = '$userId'
-            AND `tbl_articles`.`title` = '$model->title'";
+            AND `tbl_articles`.`title` = '$title'";
 
-            $model = Articles::model()->findAllBySql($sql);
+            $modelArticle = Articles::model()->findAllBySql($sql);
+
 
             $this->render('search', array(
-                'model' => $model,
+                'modelArticle' => $modelArticle,
             ));
         } else {
-            $model = array('title' => 'статьи не найдено.');
+            $modelArticleNoIsset = 'статьи не найдено.';
             $this->render('search', array(
-                'model' => $model,
+                'modelArticleNoIsset' => $modelArticleNoIsset,
             ));
         }
     }

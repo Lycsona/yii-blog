@@ -81,20 +81,20 @@
     <div class=" container col-md-offset-1 ">
         <div class="col-md-9  jumbotron">
 
-            <h1>Результат поиска</h1>
-            <?php foreach ($model as $value) { ?>
+            <h1>Результат поиска:  </h1>
+            <?php foreach ($modelArticle as $value) { ?>
                 <div class="panel panel-warning">
                     <div class="panel-heading">
-                        <h3 class="panel-title text-center " style="color: #000020"><?php echo $value->title; ?> </h3>
+                        <h3 class="panel-title text-center " style="color: #000020"><?php echo $value['title']; ?> </h3>
                     </div>
                     <div class="panel-body">
-                        <p><i> <?php echo $value->description; ?> </i></p>
+                        <p><i> <?php echo $value['description'] ?> </i></p>
 
-                        <p> <?php echo $value->aticle; ?></p>
+                        <p> <?php echo $value['aticle'] ?></p>
 
-                        <a href="<?php echo Yii::app()->baseUrl ?>/articles/update/<?php echo $value->id ?>"
+                        <a href="<?php echo Yii::app()->baseUrl ?>/articles/update/<?php echo $value['id'] ?>"
                            class="btn btn-raised btn-warning">Редактировать</a>
-                        <a href="<?php echo Yii::app()->baseUrl ?>/articles/delete/<?php echo $value->id ?>"
+                        <a href="<?php echo Yii::app()->baseUrl ?>/articles/delete/<?php echo $value['id'] ?>"
                            class="btn btn-raised">Удалить</a>
                     </div>
                 </div>
@@ -116,13 +116,13 @@
                     <a href="" class="btn btn-raised ">Удалить профиль
                     </a>
                 </div>
-
-                <form class="navbar-form navbar-left">
+                <form class="navbar-form navbar-left" action="
+                <?php echo Yii::app()->baseUrl ?>/index.php/profile/search" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-control col-md-8" placeholder="Поиск статьи">
+                        <input type="text" class="form-control col-md-8" name="title" placeholder="Поиск статьи">
                     </div>
                     <div class="form-group">
-                        <button type="button" class="btn btn-fab btn-fab-mini">
+                        <button type="submit" class="btn btn-fab btn-fab-mini">
                             <i class="material-icons">send</i>
                         </button>
                     </div>

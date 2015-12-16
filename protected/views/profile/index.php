@@ -123,57 +123,33 @@
                 <div class="col-md-12 btn-group-vertical text-center">
                     <a href="<?php echo Yii::app()->baseUrl ?>/articles/index" class="btn btn-raised ">Добавить
                         статью</a>
-                </div><br>
+                </div>
+                <br>
 
                 <div class="col-md-12 btn-group-vertical ">
 
-                    <a href="<?php echo Yii::app()->baseUrl ?>/users/delete/<?php echo $userId ?>" class="btn btn-raised ">Удалить профиль
+                    <a href="<?php echo Yii::app()->baseUrl ?>/users/delete/<?php echo $userId ?>"
+                       class="btn btn-raised ">Удалить профиль
                     </a>
                 </div>
-<!---->
-<!--                <form class="navbar-form navbar-left" action="--><?php //echo Yii::app()->baseUrl ?><!--/protected/controllers/ProfileController.php" method="POST">-->
-<!--                    <div class="form-group">-->
-<!--                        <input type="text" class="form-control col-md-8" name="articleTitle" placeholder="Поиск статьи">-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <button type="button" class="btn btn-fab btn-fab-mini">-->
-<!--                            <i class="material-icons">send</i>-->
-<!--                        </button>-->
-<!--                    </div>-->
-<!--                </form>-->
 
-<!--                <div class="btn-group-vertical ">-->
-<!--                --><?php //echo CHtml::beginForm(); ?>
-<!--                --><?php //echo CHtml::errorSummary($model) ?>
-<!---->
-<!---->
-<!--                <div class="col-md-12 form-group">-->
-<!--                    --><?php //echo CHtml::activeLabel($model, 'Поиск:'); ?>
-<!--                    --><?php //echo CHtml::activeTextField($model, 'title',
-//                        array(
-//                            'class' => 'form-control',
-//                            'placeholder' => 'введите название сатьи '
-//                        )) ?>
-<!--                </div>-->
-<!---->
-<!--                <div class="form-group">-->
-<!--                    <div class="col-md-9 col-md-offset-6 ">-->
-<!---->
-<!--                        --><?php //echo CHtml::submitButton('Искать', array(
-//                            'submit' => array('profile/search'),
-//                            'class' => 'btn btn-raised btn-warning ',
-//                        )); ?>
-<!--                    </div>-->
-<!--                </div>-->
-<!---->
-<!--                --><?php //echo CHtml::endForm(); ?>
-<!---->
-<!--            </div>-->
+                <form class="navbar-form navbar-left" action="
+                <?php echo Yii::app()->baseUrl ?>/index.php/profile/search" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control col-md-8" name="title" placeholder="Поиск статьи">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-fab btn-fab-mini">
+                            <i class="material-icons">send</i>
+                        </button>
+                    </div>
+                </form>
+
             </div>
         </div>
+
     </div>
-
-
-    <!--CONTENT END-->
+</div>
+<!--CONTENT END-->
 </body>
 </html>
