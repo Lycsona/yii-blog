@@ -135,7 +135,7 @@
 
                 <form class="navbar-form navbar-left" action="
                 <?php echo Yii::app()->baseUrl ?>/index.php/profile/search" method="POST">
-                    <div class="form-group">
+                    <div class="col-md-9 form-group">
                         <input type="text" class="form-control col-md-8" name="title" placeholder="Поиск статьи">
                     </div>
                     <div class="form-group">
