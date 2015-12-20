@@ -11,17 +11,22 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
     <?php
+    //    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/jquery-1.11.1.min.js', CClientScript::POS_END);
+    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/moment-with-locales.min.js', CClientScript::POS_END);
+    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/bootstrap.min.js', CClientScript::POS_END);
+    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/bootstrap-datetimepicker.min.js', CClientScript::POS_END);
+    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/material.min.js', CClientScript::POS_END);
+    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/ripples.min.js', CClientScript::POS_END);
+
+
     Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/bootstrap.min.css');
+    Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/bootstrap-datetimepicker.min.css');
     Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/bootstrap-theme.min.css');
     Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/bootstrap-material-design.min.css');
     Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/ripples.min.css');
     Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/style.css');
-
-//    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/jquery-2.1.4.min.js', CClientScript::POS_END);
-    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/bootstrap.min.js', CClientScript::POS_END);
-    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/material.min.js', CClientScript::POS_END);
-    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/ripples.min.js', CClientScript::POS_END);
     ?>
 </head>
 
@@ -81,7 +86,7 @@
     <div class=" container col-md-offset-1 ">
         <div class="col-md-9  jumbotron">
 
-            <h1>Результат поиска:  </h1>
+            <h1>Результат поиска: </h1>
             <?php foreach ($modelArticle as $value) { ?>
                 <div class="panel panel-warning">
                     <div class="panel-heading">
@@ -127,7 +132,29 @@
                         </button>
                     </div>
                 </form>
+                <!--_______________________календарь__________________________________________-->
 
+                <!-- Инициализация виджета "Bootstrap datetimepicker" -->
+                <div class="col-md-12  form-group">
+                    <!-- Элемент HTML с id равным datetimepicker1 -->
+                    <div class="input-group date" id="datetimepicker1">
+
+                        <label class=" col-md-offset-2">Календарь
+                            <input  type="hidden" class="form-control" placeholder="календарь"/></label>
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar "></span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Инициализация виджета "Bootstrap datetimepicker" -->
+                <script type="text/javascript">
+                    $(function () {
+                        //Идентификатор элемента HTML (например: #datetimepicker1), для которого необходимо инициализировать виджет "Bootstrap datetimepicker"
+                        $('#datetimepicker1').datetimepicker();
+                    });
+                </script>
+                <!--_______________________календарь__________________________________________-->
 
             </div>
         </div>
