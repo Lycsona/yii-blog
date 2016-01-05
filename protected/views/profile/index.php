@@ -10,10 +10,10 @@
     <!-- Material Design fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
     <?php
-//    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/jquery-1.11.1.min.js', CClientScript::POS_END);
+    //    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/jquery-1.11.1.min.js', CClientScript::POS_END);
     Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/moment-with-locales.min.js', CClientScript::POS_END);
     Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/bootstrap.min.js', CClientScript::POS_END);
     Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/bootstrap-datetimepicker.min.js', CClientScript::POS_END);
@@ -27,6 +27,7 @@
     Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/bootstrap-material-design.min.css');
     Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/ripples.min.css');
     Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/style.css');
+
     ?>
 
 </head>
@@ -89,12 +90,16 @@
 
             <h1>Твои статьи</h1>
             <?php foreach ($models as $value) { ?>
+
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title text-center " style="color: #000020"><?php echo $value->title; ?> </h3>
                     </div>
                     <div class="panel-body">
                         <p><i> <?php echo $value->description; ?> </i></p>
+
+                        <img src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $value->imj ?> " width='785'
+                             height='350' alt="imj">
 
                         <p> <?php echo $value->aticle; ?></p>
 
@@ -159,7 +164,7 @@
                     <div class="input-group date" id="datetimepicker1">
 
                         <label class=" col-md-offset-2">Календарь
-                        <input  type="hidden" class="form-control" placeholder="календарь"/></label>
+                            <input type="hidden" class="form-control" placeholder="календарь"/></label>
                         <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar "></span>
                         </span>

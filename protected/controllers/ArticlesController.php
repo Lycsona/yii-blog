@@ -20,7 +20,7 @@ class ArticlesController extends Controller
 
         if (isset($_POST['Articles'])) {
             $model->attributes = $_POST['Articles'];
-
+            var_dump($_FILES[]);
             if ($model->save()) {
                 //___________________
                 $modelUserArticles = new UserArticles;
@@ -30,7 +30,7 @@ class ArticlesController extends Controller
                 $modelUserArticles->article_id = $model->id;
                 $modelUserArticles->save();
                 //___________________
-                $this->redirect(array('profile/index'));
+               // $this->redirect(array('profile/index'));
             }
         }
 

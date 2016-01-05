@@ -18,10 +18,21 @@
     Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/ripples.min.css');
     Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/style.css');
 
-//    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/jquery-2.1.4.min.js', CClientScript::POS_END);
+    //    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/jquery-2.1.4.min.js', CClientScript::POS_END);
     Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/bootstrap.min.js', CClientScript::POS_END);
     Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/material.min.js', CClientScript::POS_END);
     Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/ripples.min.js', CClientScript::POS_END);
+
+    Yii::app()->clientScript->registerScript('preLoadPicture',
+        ' function readURL(input) {
+         if (input.files && input.files[0]) {
+          var reader = new FileReader();
+         reader.onload = function (e) {
+         $("#picture").attr("src", e.target.result); };
+          reader.readAsDataURL(input.files[0]); }
+          }
+         $("#Club_logo").change(function(){ readURL(this);
+         }); ');
 
     ?>
 </head>
@@ -121,13 +132,20 @@
                     )); ?>
             </div>
 
-            <div class="col-md-12 form-group">
-                <?php echo CHtml::activeLabel($model, 'Image : '); ?>
-                <?php echo CHtml::activeTextField($model, 'imj',
+            <div class="col-md-12 form-group  ">
+                <?php echo CHtml::activeLabel($model, 'Add image : '); ?>
+                <?php echo CHtml::activeFileField($model, 'imj',
                     array(
                         'class' => 'form-control',
                         'placeholder' => ' ',
+                        'id' => 'Club_logo',
+                        'enctype' => 'multipart/form-data',
                     )); ?>
+                <div>
+                    <img id="picture" style="width:200px; height: 150px;"
+                         src="<?php echo Yii::app()->baseUrl ?>/images/no_photo.gif"/>
+                </div>
+
             </div>
 
 
@@ -140,7 +158,6 @@
                     )); ?>
                 </div>
             </div>
-
 
 
             <?php echo CHtml::endForm(); ?>

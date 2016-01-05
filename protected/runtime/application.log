@@ -5055,3 +5055,548 @@ Stack trace:
 REQUEST_URI=/Blog/index.php/profile/js/jquery-1.11.1.min.js
 HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
 ---
+2016/01/05 22:01:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article1".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article1')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article1/
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
+---
+2016/01/05 22:01:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/dfsdfs".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/dfsdfs')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/dfsdfs/
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
+---
+2016/01/05 22:01:47 [error] [php] Undefined variable: value (/var/www/host1.server1/public_html/Blog/protected/views/profile/index.php:89)
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(869): ProfileController->renderFile()
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(782): ProfileController->renderPartial()
+#2 /var/www/host1.server1/public_html/Blog/protected/controllers/ProfileController.php(36): ProfileController->render()
+#3 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/actions/CInlineAction.php(49): ProfileController->actionIndex()
+#4 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(286): ProfileController->runAction()
+#6 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(265): ProfileController->runActionWithFilters()
+#7 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(282): ProfileController->run()
+#8 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/host1.server1/public_html/Blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/Blog/index.php/profile/index
+in /var/www/host1.server1/public_html/Blog/protected/views/profile/index.php (89)
+in /var/www/host1.server1/public_html/Blog/protected/controllers/ProfileController.php (36)
+in /var/www/host1.server1/public_html/Blog/index.php (13)
+2016/01/05 22:01:52 [error] [php] Undefined variable: value (/var/www/host1.server1/public_html/Blog/protected/views/profile/index.php:89)
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(869): ProfileController->renderFile()
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(782): ProfileController->renderPartial()
+#2 /var/www/host1.server1/public_html/Blog/protected/controllers/ProfileController.php(36): ProfileController->render()
+#3 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/actions/CInlineAction.php(49): ProfileController->actionIndex()
+#4 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(286): ProfileController->runAction()
+#6 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(265): ProfileController->runActionWithFilters()
+#7 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(282): ProfileController->run()
+#8 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/host1.server1/public_html/Blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/Blog/index.php/profile/index
+in /var/www/host1.server1/public_html/Blog/protected/views/profile/index.php (89)
+in /var/www/host1.server1/public_html/Blog/protected/controllers/ProfileController.php (36)
+in /var/www/host1.server1/public_html/Blog/index.php (13)
+2016/01/05 22:02:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article1".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article1')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article1/
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
+---
+2016/01/05 22:02:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/dfsdfs".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/dfsdfs')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/dfsdfs/
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
+---
+2016/01/05 22:02:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article1".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article1')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article1/
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
+---
+2016/01/05 22:03:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article1".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article1')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article1/
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
+---
+2016/01/05 22:03:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/dfsdfs".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/dfsdfs')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/dfsdfs/
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
+---
+2016/01/05 22:03:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3/
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:03:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3/
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:03:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3/
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:03:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3/
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:03:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3/
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:03:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:04:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:04:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:04:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:04:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:05:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:05:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:05:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:05:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:05:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:05:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:05:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:05:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:14:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article1".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article1')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article1
+HTTP_REFERER=http://host1.server1/Blog/profile/index
+---
+2016/01/05 22:14:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/dfsdfs".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/dfsdfs')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/dfsdfs
+HTTP_REFERER=http://host1.server1/Blog/profile/index
+---
+2016/01/05 22:14:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 22:27:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/material.min.js.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('js/material.min...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/js/material.min.js.map
+---
+2016/01/05 22:27:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/ripples.min.js.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('js/ripples.min....')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/js/ripples.min.js.map
+---
+2016/01/05 22:27:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/bootstrap.min.css.map
+---
+2016/01/05 22:27:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap-theme.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap-t...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/bootstrap-theme.min.css.map
+---
+2016/01/05 22:27:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap-material-design.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap-m...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/bootstrap-material-design.min.css.map
+---
+2016/01/05 22:27:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ripples.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ripples.min...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/ripples.min.css.map
+---
+2016/01/05 22:49:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/ripples.min.js.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('js/ripples.min....')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/js/ripples.min.js.map
+---
+2016/01/05 22:49:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/material.min.js.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('js/material.min...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/js/material.min.js.map
+---
+2016/01/05 22:49:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/bootstrap.min.css.map
+---
+2016/01/05 22:49:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap-theme.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap-t...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/bootstrap-theme.min.css.map
+---
+2016/01/05 22:49:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/ripples.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/ripples.min...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/ripples.min.css.map
+---
+2016/01/05 22:49:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap-material-design.min.css.map".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('css/bootstrap-m...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/css/bootstrap-material-design.min.css.map
+---
+2016/01/05 22:53:08 [error] [php] Undefined index: user (/var/www/host1.server1/public_html/Blog/protected/controllers/ArticlesController.php:29)
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(286): ArticlesController->runAction()
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(265): ArticlesController->runActionWithFilters()
+#2 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(282): ArticlesController->run()
+#3 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/host1.server1/public_html/Blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/Blog/articles/index
+in /var/www/host1.server1/public_html/Blog/protected/controllers/ArticlesController.php (29)
+in /var/www/host1.server1/public_html/Blog/index.php (13)
+2016/01/05 22:57:12 [error] [php] Undefined index: Articles (/var/www/host1.server1/public_html/Blog/protected/controllers/ArticlesController.php:23)
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(286): ArticlesController->runAction()
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(265): ArticlesController->runActionWithFilters()
+#2 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(282): ArticlesController->run()
+#3 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/host1.server1/public_html/Blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/Blog/articles/index
+in /var/www/host1.server1/public_html/Blog/protected/controllers/ArticlesController.php (23)
+in /var/www/host1.server1/public_html/Blog/index.php (13)
+2016/01/05 22:58:37 [error] [php] Undefined index: Articles (/var/www/host1.server1/public_html/Blog/protected/controllers/ArticlesController.php:23)
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(286): ArticlesController->runAction()
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(265): ArticlesController->runActionWithFilters()
+#2 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(282): ArticlesController->run()
+#3 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/host1.server1/public_html/Blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/Blog/articles/index
+in /var/www/host1.server1/public_html/Blog/protected/controllers/ArticlesController.php (23)
+in /var/www/host1.server1/public_html/Blog/index.php (13)
+2016/01/05 22:59:46 [error] [php] Undefined index: user (/var/www/host1.server1/public_html/Blog/protected/controllers/ArticlesController.php:29)
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(286): ArticlesController->runAction()
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(265): ArticlesController->runActionWithFilters()
+#2 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(282): ArticlesController->run()
+#3 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/host1.server1/public_html/Blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/Blog/articles/index
+in /var/www/host1.server1/public_html/Blog/protected/controllers/ArticlesController.php (29)
+in /var/www/host1.server1/public_html/Blog/index.php (13)
+2016/01/05 23:01:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article1".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article1')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article1
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
+---
+2016/01/05 23:01:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/dfsdfs".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/dfsdfs')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/dfsdfs
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
+---
+2016/01/05 23:01:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article1".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article1')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article1
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
+---
+2016/01/05 23:01:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/dfsdfs".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/dfsdfs')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/dfsdfs
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
+---
+2016/01/05 23:01:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article3".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article3')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article3
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=2
+---
+2016/01/05 23:01:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/w2VO-Anp0RE.jpg".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/w2VO-Anp...')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/w2VO-Anp0RE.jpg
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index?page=3
+---
+2016/01/05 23:03:43 [error] [php] Undefined index: Articles (/var/www/host1.server1/public_html/Blog/protected/controllers/ArticlesController.php:23)
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(286): ArticlesController->runAction()
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CController.php(265): ArticlesController->runActionWithFilters()
+#2 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(282): ArticlesController->run()
+#3 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/host1.server1/public_html/Blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/Blog/articles/index
+in /var/www/host1.server1/public_html/Blog/protected/controllers/ArticlesController.php (23)
+in /var/www/host1.server1/public_html/Blog/index.php (13)
+2016/01/05 23:04:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article1".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article1')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article1
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
+---
+2016/01/05 23:04:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/dfsdfs".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/dfsdfs')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/dfsdfs
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
+---
+2016/01/05 23:04:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/dfsdfs".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/dfsdfs')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/dfsdfs
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
+---
+2016/01/05 23:04:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article1".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article1')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article1
+HTTP_REFERER=http://host1.server1/Blog/index.php/profile/index
+---
+2016/01/05 23:08:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/dfsdfs".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/dfsdfs')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/dfsdfs
+HTTP_REFERER=http://host1.server1/Blog/profile/index
+---
+2016/01/05 23:08:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/article1".' in /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/article1')
+#1 /var/www/host1.server1/public_html/Blog/YiiRoot/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/host1.server1/public_html/Blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Blog/images/article1
+HTTP_REFERER=http://host1.server1/Blog/profile/index
+---
