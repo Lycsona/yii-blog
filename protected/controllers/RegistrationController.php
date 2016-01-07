@@ -11,8 +11,13 @@ class RegistrationController extends Controller
             $model->ip = (int)$_SERVER['REMOTE_ADDR'];
             $password = md5($_POST['Users']['password']);
             $model->password = $password;
+            $model->avatar = CUploadedFile::getInstance($model, 'avatar');
+
             if ($model->validate()) {
                 if ($model->save()) {
+
+                    $path = Yii::getPathOfAlias('webroot') . '/images/' . $model->avatar->getName();
+                    $model->imj->saveAs($path);
                     $this->redirect(Yii::app()->user->returnUrl);
                 }
             }
