@@ -19,7 +19,7 @@
     Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/ripples.min.css');
     Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/style.css');
 
-//    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/jquery-2.1.4.min.js', CClientScript::POS_END);
+    //    Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/jquery-2.1.4.min.js', CClientScript::POS_END);
     Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/bootstrap.min.js', CClientScript::POS_END);
     Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/material.min.js', CClientScript::POS_END);
     Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/ripples.min.js', CClientScript::POS_END);
@@ -97,7 +97,7 @@
     <div class="container ">
         <div class="col-md-6 col-md-offset-3 jumbotron">
 
-            <?php echo CHtml::beginForm(); ?>
+            <?php echo CHtml::form('', 'post', array('enctype' => 'multipart/form-data')); ?>
             <?php echo CHtml::errorSummary($model) ?>
 
             <legend class="text-center">Пожалуйста, зарегистрируйтесь!</legend>

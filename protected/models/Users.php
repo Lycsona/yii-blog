@@ -40,8 +40,9 @@ class Users extends CActiveRecord
             array('firstname, lastname, email, birthday', 'length', 'max' => 20),
             array('password', 'length', 'max' => 100),
             array('city', 'length', 'max' => 15),
-            array('avatar', 'length', 'max' => 50),
+            array('avatar', 'file', 'types' => 'jpg, gif, png'),
             array('created_add', 'safe'),
+
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, firstname, lastname, email, password, ip, created_add, city, gender, birthday, avatar', 'safe', 'on' => 'search'),

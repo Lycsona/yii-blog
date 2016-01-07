@@ -17,7 +17,7 @@ class RegistrationController extends Controller
                 if ($model->save()) {
 
                     $path = Yii::getPathOfAlias('webroot') . '/images/' . $model->avatar->getName();
-                    $model->imj->saveAs($path);
+                    $model->avatar->saveAs($path);
                     $this->redirect(Yii::app()->user->returnUrl);
                 }
             }

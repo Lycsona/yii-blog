@@ -7,17 +7,7 @@ class ProfileController extends Controller
         session_start();
         if (isset($_SESSION['user'])) {
             $userId = $_SESSION['user']['id'];
-//            $model = Articles::model()->findAll();
-            $sql = "
-SELECT `tbl_articles`.`id`,`tbl_articles`.`title`,`tbl_articles`.`aticle`,`tbl_articles`.`description`,`tbl_articles`.`imj`,`tbl_articles`.`created_at`
-FROM `tbl_articles`
-  INNER JOIN `tbl_user_articles`
-    ON `tbl_user_articles`.`article_id` = `tbl_articles`.`id`
-       AND `tbl_user_articles`.`user_id` = '$userId'
-ORDER BY `tbl_articles`.id DESC";
-
-
-            //   $model = Articles::model()->findAllBySql($sql);
+            $userAvatar = $_SESSION['user']['avatar'];
             $models = UserArticles::model()->findAll("user_id=:user_id",
                 array(":user_id" => $userId));
 
@@ -25,12 +15,8 @@ ORDER BY `tbl_articles`.id DESC";
             $this->render('index', array(
                 'models' => $models,
                 'userId' => $userId,
+                'userAvatar' => $userAvatar
             ));
-            //________________
-
-//            $this->render('index', array(
-//                'model' => $model,
-//            ));
         } else {
             $this->redirect(array('registration/index'));
         }

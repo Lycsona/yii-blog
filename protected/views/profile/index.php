@@ -118,6 +118,12 @@
         <div class=" container col-md-offset-10 ">
             <div class="col-md-3  jumbotron">
 
+                <div class="col-md-12 btn-group-vertical ">
+                    <img src="<?php echo Yii::app()->baseUrl ?>/images/<?php echo $userAvatar ?> " width='220'
+                         height='150' alt="imj">
+
+                </div>
+
                 <h1 class=" text-center">Меню </h1>
 
                 <div class="col-md-12 btn-group-vertical text-center">
