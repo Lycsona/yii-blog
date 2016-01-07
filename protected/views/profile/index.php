@@ -88,7 +88,7 @@
     <div class=" container col-md-offset-1 ">
         <div class="col-md-9  jumbotron">
 
-            <h1>Твои статьи</h1>
+            <h1> <?php echo $userName; ?> , твои статьи: </h1>
             <?php foreach ($models as $userArticle) {
                 $value = Articles::model()->findByPk($userArticle['article_id']);
                 ?>

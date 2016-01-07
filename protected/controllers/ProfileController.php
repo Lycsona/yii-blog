@@ -8,6 +8,7 @@ class ProfileController extends Controller
         if (isset($_SESSION['user'])) {
             $userId = $_SESSION['user']['id'];
             $userAvatar = $_SESSION['user']['avatar'];
+            $userName = $_SESSION['user']['firstname'];
             $models = UserArticles::model()->findAll("user_id=:user_id",
                 array(":user_id" => $userId));
 
@@ -15,7 +16,8 @@ class ProfileController extends Controller
             $this->render('index', array(
                 'models' => $models,
                 'userId' => $userId,
-                'userAvatar' => $userAvatar
+                'userAvatar' => $userAvatar,
+                'userName' => $userName
             ));
         } else {
             $this->redirect(array('registration/index'));
