@@ -18,20 +18,12 @@ ORDER BY `tbl_articles`.id DESC";
 
 
             //   $model = Articles::model()->findAllBySql($sql);
+            $models = UserArticles::model()->findAll("user_id=:user_id",
+                array(":user_id" => $userId));
 
-            //________________
-            $criteria = new CDbCriteria();
-            $count = Articles::model()->count($criteria);
 
-            $pages = new CPagination($count);
-            // элементов на страницу
-            $pages->pageSize = 2;
-            $pages->applyLimit($criteria);
-
-            $models = Articles::model()->findAll($criteria);
             $this->render('index', array(
                 'models' => $models,
-                'pages' => $pages,
                 'userId' => $userId,
             ));
             //________________

@@ -38,7 +38,8 @@ class Articles extends CActiveRecord
 	{
 		return array(
 			array('title, aticle, description', 'required'),
-			array('title, imj', 'length', 'max'=>50),
+			array('title', 'length', 'max'=>50),
+			array('imj', 'file', 'types'=>'jpg, gif, png'),
 			// The following rule is used by search().
 			array('id, title, aticle, description, created_at, imj', 'safe', 'on'=>'search'),
 		);

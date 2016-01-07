@@ -20,17 +20,21 @@ class ArticlesController extends Controller
 
         if (isset($_POST['Articles'])) {
             $model->attributes = $_POST['Articles'];
-            var_dump($_FILES[]);
+            $model->imj = CUploadedFile::getInstance($model, 'imj');
+
             if ($model->save()) {
-                //___________________
+
+                $path = Yii::getPathOfAlias('webroot') . '/images/' . $model->imj->getName();
+                $model->imj->saveAs($path);
+
                 $modelUserArticles = new UserArticles;
                 session_start();
 
                 $modelUserArticles->user_id = $_SESSION['user']['id'];
                 $modelUserArticles->article_id = $model->id;
                 $modelUserArticles->save();
-                //___________________
-               // $this->redirect(array('profile/index'));
+
+                $this->redirect(array('profile/index'));
             }
         }
 

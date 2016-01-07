@@ -101,7 +101,7 @@
 
             <legend class="text-center">Новая статья</legend>
 
-            <?php echo CHtml::beginForm(); ?>
+            <?php echo CHtml::form('', 'post', array('enctype' => 'multipart/form-data')); ?>
             <?php echo CHtml::errorSummary($model) ?>
 
             <div class="col-md-12 form-group">
@@ -137,17 +137,13 @@
                 <?php echo CHtml::activeFileField($model, 'imj',
                     array(
                         'class' => 'form-control',
-                        'placeholder' => ' ',
                         'id' => 'Club_logo',
-                        'enctype' => 'multipart/form-data',
                     )); ?>
                 <div>
                     <img id="picture" style="width:200px; height: 150px;"
                          src="<?php echo Yii::app()->baseUrl ?>/images/no_photo.gif"/>
                 </div>
-
             </div>
-
 
             <div class="form-group">
                 <div class="col-md-4 col-md-offset-8 ">
@@ -159,9 +155,7 @@
                 </div>
             </div>
 
-
             <?php echo CHtml::endForm(); ?>
-
         </div>
     </div>
 </div>

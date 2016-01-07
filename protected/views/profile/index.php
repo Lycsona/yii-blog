@@ -89,8 +89,9 @@
         <div class="col-md-9  jumbotron">
 
             <h1>Твои статьи</h1>
-            <?php foreach ($models as $value) { ?>
-
+            <?php foreach ($models as $userArticle) {
+                $value = Articles::model()->findByPk($userArticle['article_id']);
+                ?>
                 <div class="panel panel-warning">
                     <div class="panel-heading">
                         <h3 class="panel-title text-center " style="color: #000020"><?php echo $value->title; ?> </h3>
@@ -111,18 +112,6 @@
                 </div>
             <?php } ?>
 
-            <div class="row">
-                <div class=" container col-md-offset-4 ">
-                    <!--                // рисуем пейджер-->
-                    <?php
-                    $this->widget('CLinkPager', array(
-                        'pages' => $pages,
-                        'prevPageLabel' => '&laquo; назад',
-                        'nextPageLabel' => 'далее &raquo;'
-                    ));
-                    ?>
-                </div>
-            </div>
         </div>
 
 
